@@ -14,9 +14,9 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/gopcua/opcua/debug"
-	"github.com/gopcua/opcua/server"
-	"github.com/gopcua/opcua/ua"
+	"github.com/mokhae/opcua/debug"
+	"github.com/mokhae/opcua/server"
+	"github.com/mokhae/opcua/ua"
 )
 
 var (

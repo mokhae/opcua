@@ -3,9 +3,9 @@ package server
 import (
 	"time"
 
-	"github.com/gopcua/opcua/debug"
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uasc"
+	"github.com/mokhae/opcua/debug"
+	"github.com/mokhae/opcua/ua"
+	"github.com/mokhae/opcua/uasc"
 )
 
 // AttributeService implements the Attribute Service Set.

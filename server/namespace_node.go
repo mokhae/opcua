@@ -6,10 +6,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gopcua/opcua/debug"
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/server/attrs"
-	"github.com/gopcua/opcua/ua"
+	"github.com/mokhae/opcua/debug"
+	"github.com/mokhae/opcua/id"
+	"github.com/mokhae/opcua/server/attrs"
+	"github.com/mokhae/opcua/ua"
 	"golang.org/x/exp/maps"
 )
 

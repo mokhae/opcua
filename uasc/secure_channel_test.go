@@ -13,10 +13,10 @@ import (
 
 	"github.com/pascaldekloe/goe/verify"
 
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uacp"
-	"github.com/gopcua/opcua/uapolicy"
+	"github.com/mokhae/opcua/id"
+	"github.com/mokhae/opcua/ua"
+	"github.com/mokhae/opcua/uacp"
+	"github.com/mokhae/opcua/uapolicy"
 )
 
 func TestNewRequestMessage(t *testing.T) {

@@ -5,8 +5,8 @@
 package uacp
 
 import (
-	"github.com/gopcua/opcua/errors"
-	"github.com/gopcua/opcua/ua"
+	"github.com/mokhae/opcua/errors"
+	"github.com/mokhae/opcua/ua"
 )
 
 // MessageType definitions.

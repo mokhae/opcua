@@ -13,9 +13,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/gopcua/opcua/debug"
-	"github.com/gopcua/opcua/errors"
-	"github.com/gopcua/opcua/ua"
+	"github.com/mokhae/opcua/debug"
+	"github.com/mokhae/opcua/errors"
+	"github.com/mokhae/opcua/ua"
 )
 
 const (

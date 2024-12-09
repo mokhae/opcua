@@ -15,9 +15,9 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/server/refs"
-	"github.com/gopcua/opcua/ua"
+	"github.com/mokhae/opcua/id"
+	"github.com/mokhae/opcua/server/refs"
+	"github.com/mokhae/opcua/ua"
 )
 
 func main() {
@@ -139,9 +139,9 @@ var tmpl = template.Must(template.New("").Funcs(funcs).Parse(`// Generated code.
  package {{.Package}}
 
  import (
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/server/attrs"
-	"github.com/gopcua/opcua/ua"
+	"github.com/mokhae/opcua/id"
+	"github.com/mokhae/opcua/server/attrs"
+	"github.com/mokhae/opcua/ua"
  )
 
  func PredefinedNodes() []*Node{

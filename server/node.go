@@ -6,10 +6,10 @@ import (
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
 
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/server/attrs"
-	"github.com/gopcua/opcua/server/refs"
-	"github.com/gopcua/opcua/ua"
+	"github.com/mokhae/opcua/id"
+	"github.com/mokhae/opcua/server/attrs"
+	"github.com/mokhae/opcua/server/refs"
+	"github.com/mokhae/opcua/ua"
 )
 
 type Attributes map[ua.AttributeID]*ua.Variant

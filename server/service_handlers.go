@@ -8,10 +8,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/gopcua/opcua/debug"
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uasc"
+	"github.com/mokhae/opcua/debug"
+	"github.com/mokhae/opcua/id"
+	"github.com/mokhae/opcua/ua"
+	"github.com/mokhae/opcua/uasc"
 )
 
 type Handler func(*uasc.SecureChannel, ua.Request, uint32) (ua.Response, error)

@@ -10,9 +10,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/gopcua/opcua"
-	"github.com/gopcua/opcua/errors"
-	"github.com/gopcua/opcua/ua"
+	"github.com/mokhae/opcua"
+	"github.com/mokhae/opcua/errors"
+	"github.com/mokhae/opcua/ua"
 )
 
 // todo(fs): not sure we need this here
