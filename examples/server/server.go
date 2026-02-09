@@ -125,7 +125,7 @@ func main() {
 	// add the namespaces to the server, and add a reference to them
 	root_ns, _ := s.Namespace(0)
 	root_obj := root_ns.Objects()
-
+	root_obj.SetBrowseName("MyRoot")
 	mrw_id := s.AddNamespace(mrw)
 	root_obj.AddRef(mrw.Objects())
 	log.Printf("map namespace added at index %d", mrw_id)
