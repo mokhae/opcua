@@ -124,15 +124,25 @@ func main() {
 
 	// add the namespaces to the server, and add a reference to them
 	root_ns, _ := s.Namespace(0)
+
 	log.Printf("Root : %v %v", root_ns.Name(), root_ns.ID())
-
 	root_obj := root_ns.Objects()
+	// NodeID 설정 예시: ua.NodeID의 필드는 비공개이므로 생성자 함수를 사용해야 합니다.
+	// 주의: 표준 Objects 폴더(ns=0;i=85)의 NodeID를 변경하면 클라이언트 호환성 문제가 발생할 수 있습니다.
 
+	//nid := ua.NewNumericNodeID(0, 85)
+	//v, _ := ua.NewVariant(nid)
+	//root_obj.SetAttribute(ua.AttributeIDNodeID, ua.DataValue{
+	//	EncodingMask: ua.DataValueValue,
+	//	Value:        v,
+	//})
+
+	root_obj.SetDescription("CCM", "en-US")
 	root_obj.SetBrowseName("CCM")
 	root_obj.SetDisplayName("CCM_Root", "en-US")
 	root_obj.SetNodeClass(ua.NodeClassObject)
 
-	log.Printf("Root object : %v %v %v", root_obj.BrowseName().Name, root_obj.ID().String(), root_obj.DisplayName().Text)
+	log.Printf("Root object : %v %v %v %v", root_obj.BrowseName().Name, root_obj.ID().String(), root_obj.DisplayName().Text, root_obj.Description().Text)
 	//root_obj.SetAttribute(ua.AttributeIDNodeID, ua.DataValue{})
 	mrw_id := s.AddNamespace(mrw)
 	root_obj.AddRef(mrw.Objects())
