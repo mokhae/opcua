@@ -127,15 +127,6 @@ func main() {
 
 	log.Printf("Root : %v %v", root_ns.Name(), root_ns.ID())
 	root_obj := root_ns.Objects()
-	// NodeID 설정 예시: ua.NodeID의 필드는 비공개이므로 생성자 함수를 사용해야 합니다.
-	// 주의: 표준 Objects 폴더(ns=0;i=85)의 NodeID를 변경하면 클라이언트 호환성 문제가 발생할 수 있습니다.
-
-	//nid := ua.NewNumericNodeID(0, 85)
-	//v, _ := ua.NewVariant(nid)
-	//root_obj.SetAttribute(ua.AttributeIDNodeID, ua.DataValue{
-	//	EncodingMask: ua.DataValueValue,
-	//	Value:        v,
-	//})
 
 	root_obj.SetDescription("CCM", "en-US")
 	root_obj.SetBrowseName("CCM")
