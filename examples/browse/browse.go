@@ -168,7 +168,7 @@ func browse(ctx context.Context, n *opcua.Node, path string, level int) ([]NodeD
 func main() {
 	endpoint := flag.String("endpoint", "opc.tcp://localhost:4840", "OPC UA Endpoint URL")
 	nodeID := flag.String("node", "", "node id for the root node")
-	flag.BoolVar(&debug.Enable, "debug", false, "enable debug logging")
+	flag.BoolVar(&debug.Enable, "debug", true, "enable debug logging")
 	flag.Parse()
 	log.SetFlags(0)
 

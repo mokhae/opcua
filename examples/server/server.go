@@ -124,8 +124,16 @@ func main() {
 
 	// add the namespaces to the server, and add a reference to them
 	root_ns, _ := s.Namespace(0)
+	log.Printf("Root : %v %v", root_ns.Name(), root_ns.ID())
+
 	root_obj := root_ns.Objects()
-	root_obj.SetBrowseName("MyRoot")
+
+	root_obj.SetBrowseName("CCM")
+	root_obj.SetDisplayName("CCM_Root", "en-US")
+	root_obj.SetNodeClass(ua.NodeClassObject)
+
+	log.Printf("Root object : %v %v %v", root_obj.BrowseName().Name, root_obj.ID().String(), root_obj.DisplayName().Text)
+	//root_obj.SetAttribute(ua.AttributeIDNodeID, ua.DataValue{})
 	mrw_id := s.AddNamespace(mrw)
 	root_obj.AddRef(mrw.Objects())
 	log.Printf("map namespace added at index %d", mrw_id)
