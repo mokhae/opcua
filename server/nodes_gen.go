@@ -15,7 +15,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3062),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -25,7 +25,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3063),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -35,7 +35,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BaseDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BaseDataType", "")),
 			},
@@ -126,7 +126,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 26),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Number")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Number", "")),
 			},
@@ -162,7 +162,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 27),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Integer")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Integer", "")),
 			},
@@ -193,7 +193,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 28),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UInteger")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UInteger", "")),
 			},
@@ -224,7 +224,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 29),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Enumeration")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Enumeration", "")),
 			},
@@ -400,7 +400,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 1),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Boolean")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Boolean", "")),
 			},
@@ -410,7 +410,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SByte")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SByte", "")),
 			},
@@ -420,7 +420,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Byte")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Byte", "")),
 			},
@@ -441,7 +441,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 4),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Int16")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Int16", "")),
 			},
@@ -451,7 +451,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 5),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UInt16")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UInt16", "")),
 			},
@@ -477,7 +477,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 6),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Int32")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Int32", "")),
 			},
@@ -487,7 +487,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 7),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UInt32")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UInt32", "")),
 			},
@@ -583,7 +583,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 8),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Int64")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Int64", "")),
 			},
@@ -593,7 +593,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 9),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UInt64")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UInt64", "")),
 			},
@@ -609,7 +609,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 10),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Float")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Float", "")),
 			},
@@ -619,7 +619,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Double")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Double", "")),
 			},
@@ -635,7 +635,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("String")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("String", "")),
 			},
@@ -701,7 +701,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 13),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DateTime")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DateTime", "")),
 			},
@@ -717,7 +717,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Guid")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Guid", "")),
 			},
@@ -727,7 +727,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ByteString")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ByteString", "")),
 			},
@@ -758,7 +758,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("XmlElement")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("XmlElement", "")),
 			},
@@ -768,7 +768,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NodeId")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NodeId", "")),
 			},
@@ -784,7 +784,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ExpandedNodeId")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ExpandedNodeId", "")),
 			},
@@ -794,7 +794,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StatusCode")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StatusCode", "")),
 			},
@@ -804,7 +804,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 20),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("QualifiedName")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("QualifiedName", "")),
 			},
@@ -814,7 +814,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("LocalizedText")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("LocalizedText", "")),
 			},
@@ -824,7 +824,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 22),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Structure")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Structure", "")),
 			},
@@ -1350,7 +1350,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataValue")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataValue", "")),
 			},
@@ -1360,7 +1360,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DiagnosticInfo")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DiagnosticInfo", "")),
 			},
@@ -1370,7 +1370,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 30),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Image")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Image", "")),
 			},
@@ -1401,7 +1401,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 50),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Decimal")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Decimal", "")),
 			},
@@ -1411,7 +1411,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 31),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("References")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("References", "")),
 			},
@@ -1432,7 +1432,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NonHierarchicalReferences")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NonHierarchicalReferences", "")),
 			},
@@ -1558,7 +1558,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 33),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HierarchicalReferences")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HierarchicalReferences", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("InverseHierarchicalReferences", "")),
@@ -1610,7 +1610,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 34),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasChild")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasChild", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("ChildOf", "")),
@@ -1637,7 +1637,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 35),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Organizes")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Organizes", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("OrganizedBy", "")),
@@ -1654,7 +1654,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 36),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasEventSource")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasEventSource", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("EventSourceOf", "")),
@@ -1671,7 +1671,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 37),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasModellingRule")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasModellingRule", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("ModellingRuleOf", "")),
@@ -1682,7 +1682,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 38),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasEncoding")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasEncoding", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("EncodingOf", "")),
@@ -1693,7 +1693,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 39),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasDescription")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasDescription", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("DescriptionOf", "")),
@@ -1704,7 +1704,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 40),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasTypeDefinition")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasTypeDefinition", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("TypeDefinitionOf", "")),
@@ -1715,7 +1715,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 41),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("GeneratesEvent")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("GeneratesEvent", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("GeneratedBy", "")),
@@ -1732,7 +1732,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3065),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AlwaysGeneratesEvent")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AlwaysGeneratesEvent", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("AlwaysGeneratedBy", "")),
@@ -1743,7 +1743,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 44),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Aggregates")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Aggregates", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("AggregatedBy", "")),
@@ -1770,7 +1770,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 45),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasSubtype")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasSubtype", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("SubtypeOf", "")),
@@ -1781,7 +1781,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 46),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasProperty")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasProperty", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("PropertyOf", "")),
@@ -1792,7 +1792,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 47),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasComponent")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasComponent", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("ComponentOf", "")),
@@ -1864,7 +1864,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 48),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasNotifier")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasNotifier", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("NotifierOf", "")),
@@ -1875,7 +1875,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 49),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasOrderedComponent")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasOrderedComponent", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("OrderedComponentOf", "")),
@@ -1886,7 +1886,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 51),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FromState")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FromState", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("ToTransition", "")),
@@ -1897,7 +1897,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 52),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ToState")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ToState", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("FromTransition", "")),
@@ -1908,7 +1908,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 53),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasCause")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasCause", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("MayBeCausedBy", "")),
@@ -1919,7 +1919,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 54),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasEffect")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasEffect", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("MayBeEffectedBy", "")),
@@ -1951,7 +1951,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 117),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasSubStateMachine")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasSubStateMachine", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("SubStateMachineOf", "")),
@@ -1962,7 +1962,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 56),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasHistoricalConfiguration")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasHistoricalConfiguration", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("HistoricalConfigurationOf", "")),
@@ -1973,7 +1973,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24136),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasStructuredComponent")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasStructuredComponent", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsStructuredComponentOf", "")),
@@ -1984,7 +1984,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24137),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AssociatedWith")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AssociatedWith", "")),
 			},
@@ -1994,7 +1994,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 58),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BaseObjectType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BaseObjectType", "")),
 			},
@@ -2330,7 +2330,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 61),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FolderType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FolderType", "")),
 			},
@@ -2401,7 +2401,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 62),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BaseVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BaseVariableType", "")),
 			},
@@ -2422,7 +2422,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 63),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BaseDataVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BaseDataVariableType", "")),
 			},
@@ -2598,7 +2598,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 68),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PropertyType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PropertyType", "")),
 			},
@@ -2608,7 +2608,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 69),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataTypeDescriptionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataTypeDescriptionType", "")),
 			},
@@ -2618,7 +2618,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 72),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataTypeDictionaryType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataTypeDictionaryType", "")),
 			},
@@ -2628,7 +2628,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 75),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataTypeSystemType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataTypeSystemType", "")),
 			},
@@ -2638,7 +2638,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 76),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataTypeEncodingType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataTypeEncodingType", "")),
 			},
@@ -2648,7 +2648,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 120),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NamingRuleType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NamingRuleType", "")),
 			},
@@ -2658,7 +2658,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 77),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ModellingRuleType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ModellingRuleType", "")),
 			},
@@ -2668,7 +2668,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 78),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Mandatory")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Mandatory", "")),
 			},
@@ -2678,7 +2678,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 80),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Optional")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Optional", "")),
 			},
@@ -2688,7 +2688,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 83),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ExposesItsArray")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ExposesItsArray", "")),
 			},
@@ -2698,7 +2698,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11508),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OptionalPlaceholder")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OptionalPlaceholder", "")),
 			},
@@ -2708,7 +2708,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11510),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MandatoryPlaceholder")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MandatoryPlaceholder", "")),
 			},
@@ -2718,7 +2718,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 84),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Root")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Root", "")),
 			},
@@ -2737,7 +2737,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 85),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Objects")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Objects", "")),
 			},
@@ -2747,7 +2747,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 86),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Types")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Types", "")),
 			},
@@ -2757,7 +2757,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 87),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Views")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Views", "")),
 			},
@@ -2767,7 +2767,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 88),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ObjectTypes")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ObjectTypes", "")),
 			},
@@ -2777,7 +2777,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 89),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("VariableTypes")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("VariableTypes", "")),
 			},
@@ -2787,7 +2787,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 90),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataTypes")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataTypes", "")),
 			},
@@ -2797,7 +2797,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 91),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReferenceTypes")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReferenceTypes", "")),
 			},
@@ -2807,7 +2807,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 92),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("XML Schema")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("XML Schema", "")),
 			},
@@ -2817,7 +2817,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 93),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OPC Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OPC Binary", "")),
 			},
@@ -2827,7 +2827,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 129),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasArgumentDescription")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasArgumentDescription", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("ArgumentDescriptionOf", "")),
@@ -2844,7 +2844,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 131),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasOptionalInputArgumentDescription")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasOptionalInputArgumentDescription", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("OptionalInputArgumentDescriptionOf", "")),
@@ -2855,7 +2855,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15957),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("http://opcfoundation.org/UA/")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("http://opcfoundation.org/UA/", "")),
 			},
@@ -2865,7 +2865,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3068),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NodeVersion")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NodeVersion", "")),
 			},
@@ -2875,7 +2875,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12170),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ViewVersion")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ViewVersion", "")),
 			},
@@ -2885,7 +2885,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3067),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Icon")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Icon", "")),
 			},
@@ -2895,7 +2895,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3069),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("LocalTime")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("LocalTime", "")),
 			},
@@ -2905,7 +2905,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3070),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AllowNulls")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AllowNulls", "")),
 			},
@@ -2915,7 +2915,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11433),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ValueAsText")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ValueAsText", "")),
 			},
@@ -2925,7 +2925,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11498),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MaxStringLength")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MaxStringLength", "")),
 			},
@@ -2935,7 +2935,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15002),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MaxCharacters")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MaxCharacters", "")),
 			},
@@ -2945,7 +2945,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12908),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MaxByteStringLength")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MaxByteStringLength", "")),
 			},
@@ -2955,7 +2955,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11512),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MaxArrayLength")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MaxArrayLength", "")),
 			},
@@ -2965,7 +2965,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11513),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EngineeringUnits")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EngineeringUnits", "")),
 			},
@@ -2975,7 +2975,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11432),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EnumStrings")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EnumStrings", "")),
 			},
@@ -2985,7 +2985,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3071),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EnumValues")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EnumValues", "")),
 			},
@@ -2995,7 +2995,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12745),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OptionSetValues")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OptionSetValues", "")),
 			},
@@ -3005,7 +3005,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32750),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OptionSetLength")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OptionSetLength", "")),
 			},
@@ -3015,7 +3015,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3072),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("InputArguments")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("InputArguments", "")),
 			},
@@ -3025,7 +3025,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3073),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OutputArguments")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OutputArguments", "")),
 			},
@@ -3035,7 +3035,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17605),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DefaultInstanceBrowseName")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DefaultInstanceBrowseName", "")),
 			},
@@ -3045,7 +3045,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2000),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ImageBMP")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ImageBMP", "")),
 			},
@@ -3055,7 +3055,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2001),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ImageGIF")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ImageGIF", "")),
 			},
@@ -3065,7 +3065,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2002),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ImageJPG")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ImageJPG", "")),
 			},
@@ -3075,7 +3075,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2003),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ImagePNG")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ImagePNG", "")),
 			},
@@ -3085,7 +3085,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16307),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AudioDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AudioDataType", "")),
 			},
@@ -3095,7 +3095,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12756),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Union")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Union", "")),
 			},
@@ -3105,7 +3105,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23751),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UriString")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UriString", "")),
 			},
@@ -3115,7 +3115,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2004),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerType", "")),
 			},
@@ -3125,7 +3125,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2013),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerCapabilitiesType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerCapabilitiesType", "")),
 			},
@@ -3135,7 +3135,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2020),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerDiagnosticsType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerDiagnosticsType", "")),
 			},
@@ -3145,7 +3145,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2026),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SessionsDiagnosticsSummaryType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SessionsDiagnosticsSummaryType", "")),
 			},
@@ -3155,7 +3155,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2029),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SessionDiagnosticsObjectType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SessionDiagnosticsObjectType", "")),
 			},
@@ -3165,7 +3165,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2033),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("VendorServerInfoType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("VendorServerInfoType", "")),
 			},
@@ -3175,7 +3175,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2034),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerRedundancyType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerRedundancyType", "")),
 			},
@@ -3196,7 +3196,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2036),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TransparentRedundancyType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TransparentRedundancyType", "")),
 			},
@@ -3206,7 +3206,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2039),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NonTransparentRedundancyType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NonTransparentRedundancyType", "")),
 			},
@@ -3222,7 +3222,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11945),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NonTransparentNetworkRedundancyType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NonTransparentNetworkRedundancyType", "")),
 			},
@@ -3232,7 +3232,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11564),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OperationLimitsType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OperationLimitsType", "")),
 			},
@@ -3242,7 +3242,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11575),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FileType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FileType", "")),
 			},
@@ -3268,7 +3268,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11595),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AddressSpaceFileType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AddressSpaceFileType", "")),
 			},
@@ -3278,7 +3278,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11616),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NamespaceMetadataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NamespaceMetadataType", "")),
 			},
@@ -3288,7 +3288,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11645),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NamespacesType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NamespacesType", "")),
 			},
@@ -3298,7 +3298,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2041),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BaseEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BaseEventType", "")),
 			},
@@ -3349,7 +3349,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2052),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditEventType", "")),
 			},
@@ -3395,7 +3395,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2058),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditSecurityEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditSecurityEventType", "")),
 			},
@@ -3421,7 +3421,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2059),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditChannelEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditChannelEventType", "")),
 			},
@@ -3437,7 +3437,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2060),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditOpenSecureChannelEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditOpenSecureChannelEventType", "")),
 			},
@@ -3447,7 +3447,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2069),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditSessionEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditSessionEventType", "")),
 			},
@@ -3473,7 +3473,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2071),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditCreateSessionEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditCreateSessionEventType", "")),
 			},
@@ -3489,7 +3489,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2748),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditUrlMismatchEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditUrlMismatchEventType", "")),
 			},
@@ -3499,7 +3499,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2075),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditActivateSessionEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditActivateSessionEventType", "")),
 			},
@@ -3509,7 +3509,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2078),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditCancelEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditCancelEventType", "")),
 			},
@@ -3519,7 +3519,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2080),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditCertificateEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditCertificateEventType", "")),
 			},
@@ -3560,7 +3560,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2082),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditCertificateDataMismatchEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditCertificateDataMismatchEventType", "")),
 			},
@@ -3570,7 +3570,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2085),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditCertificateExpiredEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditCertificateExpiredEventType", "")),
 			},
@@ -3580,7 +3580,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2086),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditCertificateInvalidEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditCertificateInvalidEventType", "")),
 			},
@@ -3590,7 +3590,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2087),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditCertificateUntrustedEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditCertificateUntrustedEventType", "")),
 			},
@@ -3600,7 +3600,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2088),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditCertificateRevokedEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditCertificateRevokedEventType", "")),
 			},
@@ -3610,7 +3610,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2089),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditCertificateMismatchEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditCertificateMismatchEventType", "")),
 			},
@@ -3620,7 +3620,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2090),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditNodeManagementEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditNodeManagementEventType", "")),
 			},
@@ -3651,7 +3651,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2091),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditAddNodesEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditAddNodesEventType", "")),
 			},
@@ -3661,7 +3661,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2093),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditDeleteNodesEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditDeleteNodesEventType", "")),
 			},
@@ -3671,7 +3671,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2095),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditAddReferencesEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditAddReferencesEventType", "")),
 			},
@@ -3681,7 +3681,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2097),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditDeleteReferencesEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditDeleteReferencesEventType", "")),
 			},
@@ -3691,7 +3691,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2099),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditUpdateEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditUpdateEventType", "")),
 			},
@@ -3712,7 +3712,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2100),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditWriteUpdateEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditWriteUpdateEventType", "")),
 			},
@@ -3722,7 +3722,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2104),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditHistoryUpdateEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditHistoryUpdateEventType", "")),
 			},
@@ -3753,7 +3753,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2127),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditUpdateMethodEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditUpdateMethodEventType", "")),
 			},
@@ -3794,7 +3794,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2130),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SystemEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SystemEventType", "")),
 			},
@@ -3835,7 +3835,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2131),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DeviceFailureEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DeviceFailureEventType", "")),
 			},
@@ -3845,7 +3845,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11446),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SystemStatusChangeEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SystemStatusChangeEventType", "")),
 			},
@@ -3855,7 +3855,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2132),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BaseModelChangeEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BaseModelChangeEventType", "")),
 			},
@@ -3871,7 +3871,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2133),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("GeneralModelChangeEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("GeneralModelChangeEventType", "")),
 			},
@@ -3881,7 +3881,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2738),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SemanticChangeEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SemanticChangeEventType", "")),
 			},
@@ -3891,7 +3891,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3035),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EventQueueOverflowEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EventQueueOverflowEventType", "")),
 			},
@@ -3901,7 +3901,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11436),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ProgressEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ProgressEventType", "")),
 			},
@@ -3911,7 +3911,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23606),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditClientEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditClientEventType", "")),
 			},
@@ -3927,7 +3927,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23926),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditClientUpdateMethodResultEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditClientUpdateMethodResultEventType", "")),
 			},
@@ -3937,7 +3937,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2340),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AggregateFunctionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AggregateFunctionType", "")),
 			},
@@ -3947,7 +3947,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2137),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerVendorCapabilityType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerVendorCapabilityType", "")),
 			},
@@ -3957,7 +3957,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2138),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerStatusType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerStatusType", "")),
 			},
@@ -3967,7 +3967,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3051),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BuildInfoType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BuildInfoType", "")),
 			},
@@ -3977,7 +3977,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2150),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerDiagnosticsSummaryType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerDiagnosticsSummaryType", "")),
 			},
@@ -3987,7 +3987,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2164),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SamplingIntervalDiagnosticsArrayType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SamplingIntervalDiagnosticsArrayType", "")),
 			},
@@ -3997,7 +3997,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2165),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SamplingIntervalDiagnosticsType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SamplingIntervalDiagnosticsType", "")),
 			},
@@ -4007,7 +4007,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2171),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SubscriptionDiagnosticsArrayType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SubscriptionDiagnosticsArrayType", "")),
 			},
@@ -4017,7 +4017,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2172),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SubscriptionDiagnosticsType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SubscriptionDiagnosticsType", "")),
 			},
@@ -4027,7 +4027,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2196),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SessionDiagnosticsArrayType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SessionDiagnosticsArrayType", "")),
 			},
@@ -4037,7 +4037,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2197),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SessionDiagnosticsVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SessionDiagnosticsVariableType", "")),
 			},
@@ -4047,7 +4047,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2243),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SessionSecurityDiagnosticsArrayType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SessionSecurityDiagnosticsArrayType", "")),
 			},
@@ -4057,7 +4057,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2244),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SessionSecurityDiagnosticsType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SessionSecurityDiagnosticsType", "")),
 			},
@@ -4067,7 +4067,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11487),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OptionSetType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OptionSetType", "")),
 			},
@@ -4077,7 +4077,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16309),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SelectionListType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SelectionListType", "")),
 			},
@@ -4087,7 +4087,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17986),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AudioVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AudioVariableType", "")),
 			},
@@ -4097,7 +4097,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3048),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EventTypes")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EventTypes", "")),
 			},
@@ -4107,7 +4107,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 31915),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Locations")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Locations", "")),
 			},
@@ -4117,7 +4117,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2253),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Server")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Server", "")),
 			},
@@ -4127,7 +4127,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11312),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CurrentServerId")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CurrentServerId", "")),
 			},
@@ -4137,7 +4137,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11313),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RedundantServerArray")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RedundantServerArray", "")),
 			},
@@ -4147,7 +4147,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11314),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerUriArray")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerUriArray", "")),
 			},
@@ -4157,7 +4157,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14415),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerNetworkGroups")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerNetworkGroups", "")),
 			},
@@ -4167,7 +4167,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11192),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HistoryServerCapabilities")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HistoryServerCapabilities", "")),
 			},
@@ -4177,7 +4177,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23562),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IsDeprecated")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IsDeprecated", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("Deprecates", "")),
@@ -4188,7 +4188,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11737),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BitFieldMaskDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BitFieldMaskDataType", "")),
 			},
@@ -4198,7 +4198,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24263),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SemanticVersionString")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SemanticVersionString", "")),
 			},
@@ -4208,7 +4208,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14533),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("KeyValuePair")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("KeyValuePair", "")),
 			},
@@ -4218,7 +4218,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16313),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AdditionalParametersType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AdditionalParametersType", "")),
 			},
@@ -4228,7 +4228,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17548),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EphemeralKeyType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EphemeralKeyType", "")),
 			},
@@ -4238,7 +4238,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15528),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EndpointType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EndpointType", "")),
 			},
@@ -4248,7 +4248,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 31917),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Handle")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Handle", "")),
 			},
@@ -4258,7 +4258,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 31918),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TrimmedString")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TrimmedString", "")),
 			},
@@ -4268,7 +4268,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2299),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StateMachineType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StateMachineType", "")),
 			},
@@ -4284,7 +4284,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2755),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StateVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StateVariableType", "")),
 			},
@@ -4305,7 +4305,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2762),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TransitionVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TransitionVariableType", "")),
 			},
@@ -4321,7 +4321,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2771),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FiniteStateMachineType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FiniteStateMachineType", "")),
 			},
@@ -4352,7 +4352,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2760),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FiniteStateVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FiniteStateVariableType", "")),
 			},
@@ -4362,7 +4362,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2767),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FiniteTransitionVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FiniteTransitionVariableType", "")),
 			},
@@ -4372,7 +4372,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2307),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StateType", "")),
 			},
@@ -4393,7 +4393,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2309),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("InitialStateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("InitialStateType", "")),
 			},
@@ -4403,7 +4403,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2310),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TransitionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TransitionType", "")),
 			},
@@ -4413,7 +4413,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15109),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ChoiceStateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ChoiceStateType", "")),
 			},
@@ -4423,7 +4423,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15112),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasGuard")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasGuard", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("GuardOf", "")),
@@ -4434,7 +4434,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15113),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("GuardVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("GuardVariableType", "")),
 			},
@@ -4455,7 +4455,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15128),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ExpressionGuardVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ExpressionGuardVariableType", "")),
 			},
@@ -4465,7 +4465,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15317),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ElseGuardVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ElseGuardVariableType", "")),
 			},
@@ -4475,7 +4475,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17709),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RationalNumberType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RationalNumberType", "")),
 			},
@@ -4485,7 +4485,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17714),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("VectorType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("VectorType", "")),
 			},
@@ -4501,7 +4501,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17716),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("3DVectorType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("3DVectorType", "")),
 			},
@@ -4511,7 +4511,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18772),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CartesianCoordinatesType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CartesianCoordinatesType", "")),
 			},
@@ -4527,7 +4527,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18774),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("3DCartesianCoordinatesType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("3DCartesianCoordinatesType", "")),
 			},
@@ -4537,7 +4537,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18779),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OrientationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OrientationType", "")),
 			},
@@ -4553,7 +4553,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18781),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("3DOrientationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("3DOrientationType", "")),
 			},
@@ -4563,7 +4563,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18786),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FrameType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FrameType", "")),
 			},
@@ -4579,7 +4579,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18791),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("3DFrameType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("3DFrameType", "")),
 			},
@@ -4589,7 +4589,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18806),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RationalNumber")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RationalNumber", "")),
 			},
@@ -4599,7 +4599,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18807),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Vector")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Vector", "")),
 			},
@@ -4615,7 +4615,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18808),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("3DVector")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("3DVector", "")),
 			},
@@ -4625,7 +4625,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18809),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CartesianCoordinates")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CartesianCoordinates", "")),
 			},
@@ -4641,7 +4641,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18810),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("3DCartesianCoordinates")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("3DCartesianCoordinates", "")),
 			},
@@ -4651,7 +4651,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18811),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Orientation")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Orientation", "")),
 			},
@@ -4667,7 +4667,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18812),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("3DOrientation")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("3DOrientation", "")),
 			},
@@ -4677,7 +4677,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18813),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Frame")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Frame", "")),
 			},
@@ -4693,7 +4693,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18814),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("3DFrame")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("3DFrame", "")),
 			},
@@ -4703,7 +4703,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2311),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TransitionEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TransitionEventType", "")),
 			},
@@ -4719,7 +4719,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2315),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditUpdateStateEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditUpdateStateEventType", "")),
 			},
@@ -4740,7 +4740,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11939),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OpenFileMode")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OpenFileMode", "")),
 			},
@@ -4750,7 +4750,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 13353),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FileDirectoryType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FileDirectoryType", "")),
 			},
@@ -4760,7 +4760,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16314),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FileSystem")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FileSystem", "")),
 			},
@@ -4770,7 +4770,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15744),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TemporaryFileTransferType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TemporaryFileTransferType", "")),
 			},
@@ -4780,7 +4780,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15803),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FileTransferStateMachineType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FileTransferStateMachineType", "")),
 			},
@@ -4790,7 +4790,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15607),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RoleSetType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RoleSetType", "")),
 			},
@@ -4800,7 +4800,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15620),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RoleType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RoleType", "")),
 			},
@@ -4810,7 +4810,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15632),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IdentityCriteriaType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IdentityCriteriaType", "")),
 			},
@@ -4820,7 +4820,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15634),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IdentityMappingRuleType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IdentityMappingRuleType", "")),
 			},
@@ -4830,7 +4830,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17641),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RoleMappingRuleChangedAuditEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RoleMappingRuleChangedAuditEventType", "")),
 			},
@@ -4840,7 +4840,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15644),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Anonymous")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Anonymous", "")),
 			},
@@ -4850,7 +4850,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15656),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuthenticatedUser")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuthenticatedUser", "")),
 			},
@@ -4860,7 +4860,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15668),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Observer")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Observer", "")),
 			},
@@ -4870,7 +4870,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15680),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Operator")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Operator", "")),
 			},
@@ -4880,7 +4880,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16036),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Engineer")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Engineer", "")),
 			},
@@ -4890,7 +4890,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15692),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Supervisor")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Supervisor", "")),
 			},
@@ -4900,7 +4900,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15716),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ConfigureAdmin")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ConfigureAdmin", "")),
 			},
@@ -4910,7 +4910,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15704),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SecurityAdmin")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SecurityAdmin", "")),
 			},
@@ -4920,7 +4920,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25565),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SecurityKeyServerAdmin")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SecurityKeyServerAdmin", "")),
 			},
@@ -4930,7 +4930,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25603),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SecurityKeyServerAccess")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SecurityKeyServerAccess", "")),
 			},
@@ -4940,7 +4940,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25584),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SecurityKeyServerPush")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SecurityKeyServerPush", "")),
 			},
@@ -4950,7 +4950,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17589),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DictionaryEntryType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DictionaryEntryType", "")),
 			},
@@ -4971,7 +4971,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17591),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DictionaryFolderType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DictionaryFolderType", "")),
 			},
@@ -4981,7 +4981,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17594),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Dictionaries")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Dictionaries", "")),
 			},
@@ -4991,7 +4991,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17597),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasDictionaryEntry")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasDictionaryEntry", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("DictionaryEntryOf", "")),
@@ -5002,7 +5002,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17598),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IrdiDictionaryEntryType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IrdiDictionaryEntryType", "")),
 			},
@@ -5012,7 +5012,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17600),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UriDictionaryEntryType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UriDictionaryEntryType", "")),
 			},
@@ -5022,7 +5022,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17602),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BaseInterfaceType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BaseInterfaceType", "")),
 			},
@@ -5103,7 +5103,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17708),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("InterfaceTypes")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("InterfaceTypes", "")),
 			},
@@ -5113,7 +5113,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17603),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasInterface")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasInterface", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("InterfaceOf", "")),
@@ -5124,7 +5124,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17604),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasAddIn")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasAddIn", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("AddInOf", "")),
@@ -5135,7 +5135,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23498),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CurrencyUnitType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CurrencyUnitType", "")),
 			},
@@ -5145,7 +5145,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23501),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CurrencyUnit")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CurrencyUnit", "")),
 			},
@@ -5155,7 +5155,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23513),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IOrderedObjectType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IOrderedObjectType", "")),
 			},
@@ -5165,7 +5165,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23518),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OrderedListType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OrderedListType", "")),
 			},
@@ -5175,7 +5175,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2365),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataItemType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataItemType", "")),
 			},
@@ -5201,7 +5201,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15318),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BaseAnalogType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BaseAnalogType", "")),
 			},
@@ -5222,7 +5222,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2368),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AnalogItemType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AnalogItemType", "")),
 			},
@@ -5238,7 +5238,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17497),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AnalogUnitType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AnalogUnitType", "")),
 			},
@@ -5248,7 +5248,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17570),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AnalogUnitRangeType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AnalogUnitRangeType", "")),
 			},
@@ -5258,7 +5258,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2372),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DiscreteItemType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DiscreteItemType", "")),
 			},
@@ -5284,7 +5284,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2373),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TwoStateDiscreteType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TwoStateDiscreteType", "")),
 			},
@@ -5294,7 +5294,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2376),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MultiStateDiscreteType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MultiStateDiscreteType", "")),
 			},
@@ -5304,7 +5304,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11238),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MultiStateValueDiscreteType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MultiStateValueDiscreteType", "")),
 			},
@@ -5320,7 +5320,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12021),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ArrayItemType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ArrayItemType", "")),
 			},
@@ -5356,7 +5356,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12029),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("YArrayItemType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("YArrayItemType", "")),
 			},
@@ -5366,7 +5366,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12038),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("XYArrayItemType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("XYArrayItemType", "")),
 			},
@@ -5376,7 +5376,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12047),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ImageItemType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ImageItemType", "")),
 			},
@@ -5386,7 +5386,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12057),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CubeItemType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CubeItemType", "")),
 			},
@@ -5396,7 +5396,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12068),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NDimensionArrayItemType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NDimensionArrayItemType", "")),
 			},
@@ -5406,7 +5406,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 8995),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TwoStateVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TwoStateVariableType", "")),
 			},
@@ -5416,7 +5416,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 9002),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ConditionVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ConditionVariableType", "")),
 			},
@@ -5426,7 +5426,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 9004),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasTrueSubState")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasTrueSubState", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsTrueSubStateOf", "")),
@@ -5437,7 +5437,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 9005),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasFalseSubState")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasFalseSubState", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsFalseSubStateOf", "")),
@@ -5448,7 +5448,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16361),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasAlarmSuppressionGroup")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasAlarmSuppressionGroup", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsAlarmSuppressionGroupOf", "")),
@@ -5459,7 +5459,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16362),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AlarmGroupMember")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AlarmGroupMember", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("MemberOfAlarmGroup", "")),
@@ -5476,7 +5476,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32059),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AlarmSuppressionGroupMember")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AlarmSuppressionGroupMember", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("MemberOfAlarmSuppressionGroup", "")),
@@ -5487,7 +5487,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2782),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ConditionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ConditionType", "")),
 			},
@@ -5508,7 +5508,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2830),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DialogConditionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DialogConditionType", "")),
 			},
@@ -5518,7 +5518,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2881),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AcknowledgeableConditionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AcknowledgeableConditionType", "")),
 			},
@@ -5534,7 +5534,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2915),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AlarmConditionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AlarmConditionType", "")),
 			},
@@ -5560,7 +5560,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16405),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AlarmGroupType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AlarmGroupType", "")),
 			},
@@ -5576,7 +5576,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32064),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AlarmSuppressionGroupType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AlarmSuppressionGroupType", "")),
 			},
@@ -5586,7 +5586,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2929),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ShelvedStateMachineType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ShelvedStateMachineType", "")),
 			},
@@ -5596,7 +5596,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2955),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("LimitAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("LimitAlarmType", "")),
 			},
@@ -5617,7 +5617,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 9318),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ExclusiveLimitStateMachineType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ExclusiveLimitStateMachineType", "")),
 			},
@@ -5627,7 +5627,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 9341),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ExclusiveLimitAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ExclusiveLimitAlarmType", "")),
 			},
@@ -5653,7 +5653,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 9906),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NonExclusiveLimitAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NonExclusiveLimitAlarmType", "")),
 			},
@@ -5679,7 +5679,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 10060),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NonExclusiveLevelAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NonExclusiveLevelAlarmType", "")),
 			},
@@ -5689,7 +5689,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 9482),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ExclusiveLevelAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ExclusiveLevelAlarmType", "")),
 			},
@@ -5699,7 +5699,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 10368),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NonExclusiveDeviationAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NonExclusiveDeviationAlarmType", "")),
 			},
@@ -5709,7 +5709,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 10214),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NonExclusiveRateOfChangeAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NonExclusiveRateOfChangeAlarmType", "")),
 			},
@@ -5719,7 +5719,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 9764),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ExclusiveDeviationAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ExclusiveDeviationAlarmType", "")),
 			},
@@ -5729,7 +5729,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 9623),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ExclusiveRateOfChangeAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ExclusiveRateOfChangeAlarmType", "")),
 			},
@@ -5739,7 +5739,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 10523),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DiscreteAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DiscreteAlarmType", "")),
 			},
@@ -5755,7 +5755,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 10637),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OffNormalAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OffNormalAlarmType", "")),
 			},
@@ -5786,7 +5786,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11753),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SystemOffNormalAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SystemOffNormalAlarmType", "")),
 			},
@@ -5807,7 +5807,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 10751),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TripAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TripAlarmType", "")),
 			},
@@ -5817,7 +5817,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18347),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("InstrumentDiagnosticAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("InstrumentDiagnosticAlarmType", "")),
 			},
@@ -5827,7 +5827,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18496),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SystemDiagnosticAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SystemDiagnosticAlarmType", "")),
 			},
@@ -5837,7 +5837,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 13225),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CertificateExpirationAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CertificateExpirationAlarmType", "")),
 			},
@@ -5847,7 +5847,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17080),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DiscrepancyAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DiscrepancyAlarmType", "")),
 			},
@@ -5857,7 +5857,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11163),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BaseConditionClassType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BaseConditionClassType", "")),
 			},
@@ -5908,7 +5908,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11164),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ProcessConditionClassType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ProcessConditionClassType", "")),
 			},
@@ -5918,7 +5918,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11165),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MaintenanceConditionClassType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MaintenanceConditionClassType", "")),
 			},
@@ -5928,7 +5928,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11166),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SystemConditionClassType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SystemConditionClassType", "")),
 			},
@@ -5938,7 +5938,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17218),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SafetyConditionClassType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SafetyConditionClassType", "")),
 			},
@@ -5948,7 +5948,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17219),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HighlyManagedAlarmConditionClassType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HighlyManagedAlarmConditionClassType", "")),
 			},
@@ -5958,7 +5958,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17220),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TrainingConditionClassType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TrainingConditionClassType", "")),
 			},
@@ -5968,7 +5968,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18665),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StatisticalConditionClassType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StatisticalConditionClassType", "")),
 			},
@@ -5978,7 +5978,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17221),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TestingConditionClassType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TestingConditionClassType", "")),
 			},
@@ -5988,7 +5988,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2790),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditConditionEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditConditionEventType", "")),
 			},
@@ -6049,7 +6049,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2803),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditConditionEnableEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditConditionEnableEventType", "")),
 			},
@@ -6059,7 +6059,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2829),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditConditionCommentEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditConditionCommentEventType", "")),
 			},
@@ -6069,7 +6069,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 8927),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditConditionRespondEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditConditionRespondEventType", "")),
 			},
@@ -6079,7 +6079,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 8944),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditConditionAcknowledgeEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditConditionAcknowledgeEventType", "")),
 			},
@@ -6089,7 +6089,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 8961),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditConditionConfirmEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditConditionConfirmEventType", "")),
 			},
@@ -6099,7 +6099,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11093),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditConditionShelvingEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditConditionShelvingEventType", "")),
 			},
@@ -6109,7 +6109,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17225),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditConditionSuppressionEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditConditionSuppressionEventType", "")),
 			},
@@ -6119,7 +6119,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17242),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditConditionSilenceEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditConditionSilenceEventType", "")),
 			},
@@ -6129,7 +6129,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15013),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditConditionResetEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditConditionResetEventType", "")),
 			},
@@ -6139,7 +6139,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17259),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditConditionOutOfServiceEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditConditionOutOfServiceEventType", "")),
 			},
@@ -6149,7 +6149,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2787),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RefreshStartEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RefreshStartEventType", "")),
 			},
@@ -6159,7 +6159,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2788),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RefreshEndEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RefreshEndEventType", "")),
 			},
@@ -6169,7 +6169,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2789),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RefreshRequiredEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RefreshRequiredEventType", "")),
 			},
@@ -6179,7 +6179,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 9006),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasCondition")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasCondition", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsConditionOf", "")),
@@ -6190,7 +6190,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17276),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasEffectDisable")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasEffectDisable", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("MayBeDisabledBy", "")),
@@ -6201,7 +6201,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17983),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasEffectEnable")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasEffectEnable", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("MayBeEnabledBy", "")),
@@ -6212,7 +6212,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17984),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasEffectSuppressed")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasEffectSuppressed", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("MayBeSuppressedBy", "")),
@@ -6223,7 +6223,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17985),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasEffectUnsuppressed")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasEffectUnsuppressed", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("MayBeUnsuppressedBy", "")),
@@ -6234,7 +6234,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17279),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AlarmMetricsType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AlarmMetricsType", "")),
 			},
@@ -6244,7 +6244,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17277),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AlarmRateVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AlarmRateVariableType", "")),
 			},
@@ -6254,7 +6254,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32244),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AlarmStateVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AlarmStateVariableType", "")),
 			},
@@ -6264,7 +6264,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32251),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AlarmMask")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AlarmMask", "")),
 			},
@@ -6274,7 +6274,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2391),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ProgramStateMachineType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ProgramStateMachineType", "")),
 			},
@@ -6284,7 +6284,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2378),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ProgramTransitionEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ProgramTransitionEventType", "")),
 			},
@@ -6294,7 +6294,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11856),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditProgramTransitionEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditProgramTransitionEventType", "")),
 			},
@@ -6304,7 +6304,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3806),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ProgramTransitionAuditEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ProgramTransitionAuditEventType", "")),
 			},
@@ -6314,7 +6314,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2380),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ProgramDiagnosticType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ProgramDiagnosticType", "")),
 			},
@@ -6324,7 +6324,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15383),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ProgramDiagnostic2Type")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ProgramDiagnostic2Type", "")),
 			},
@@ -6334,7 +6334,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11214),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Annotations")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Annotations", "")),
 			},
@@ -6344,7 +6344,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2318),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HistoricalDataConfigurationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HistoricalDataConfigurationType", "")),
 			},
@@ -6354,7 +6354,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11202),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HA Configuration")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HA Configuration", "")),
 			},
@@ -6364,7 +6364,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11215),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HistoricalEventFilter")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HistoricalEventFilter", "")),
 			},
@@ -6374,7 +6374,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2330),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HistoryServerCapabilitiesType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HistoryServerCapabilitiesType", "")),
 			},
@@ -6384,7 +6384,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2999),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditHistoryEventUpdateEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditHistoryEventUpdateEventType", "")),
 			},
@@ -6394,7 +6394,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3006),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditHistoryValueUpdateEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditHistoryValueUpdateEventType", "")),
 			},
@@ -6404,7 +6404,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19095),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditHistoryAnnotationUpdateEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditHistoryAnnotationUpdateEventType", "")),
 			},
@@ -6414,7 +6414,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3012),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditHistoryDeleteEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditHistoryDeleteEventType", "")),
 			},
@@ -6440,7 +6440,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3014),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditHistoryRawModifyDeleteEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditHistoryRawModifyDeleteEventType", "")),
 			},
@@ -6450,7 +6450,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3019),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditHistoryAtTimeDeleteEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditHistoryAtTimeDeleteEventType", "")),
 			},
@@ -6460,7 +6460,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 3022),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuditHistoryEventDeleteEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuditHistoryEventDeleteEventType", "")),
 			},
@@ -6470,7 +6470,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12522),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TrustListType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TrustListType", "")),
 			},
@@ -6480,7 +6480,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23564),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TrustListValidationOptions")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TrustListValidationOptions", "")),
 			},
@@ -6490,7 +6490,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12552),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TrustListMasks")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TrustListMasks", "")),
 			},
@@ -6500,7 +6500,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12554),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TrustListDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TrustListDataType", "")),
 			},
@@ -6510,7 +6510,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19297),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TrustListOutOfDateAlarmType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TrustListOutOfDateAlarmType", "")),
 			},
@@ -6520,7 +6520,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12555),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CertificateGroupType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CertificateGroupType", "")),
 			},
@@ -6530,7 +6530,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 13813),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CertificateGroupFolderType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CertificateGroupFolderType", "")),
 			},
@@ -6540,7 +6540,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12556),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CertificateType", "")),
 			},
@@ -6566,7 +6566,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12557),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ApplicationCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ApplicationCertificateType", "")),
 			},
@@ -6592,7 +6592,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12558),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HttpsCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HttpsCertificateType", "")),
 			},
@@ -6602,7 +6602,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15181),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UserCredentialCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UserCredentialCertificateType", "")),
 			},
@@ -6612,7 +6612,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12559),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RsaMinApplicationCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RsaMinApplicationCertificateType", "")),
 			},
@@ -6622,7 +6622,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12560),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RsaSha256ApplicationCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RsaSha256ApplicationCertificateType", "")),
 			},
@@ -6632,7 +6632,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23537),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EccApplicationCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EccApplicationCertificateType", "")),
 			},
@@ -6673,7 +6673,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23538),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EccNistP256ApplicationCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EccNistP256ApplicationCertificateType", "")),
 			},
@@ -6683,7 +6683,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23539),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EccNistP384ApplicationCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EccNistP384ApplicationCertificateType", "")),
 			},
@@ -6693,7 +6693,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23540),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EccBrainpoolP256r1ApplicationCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EccBrainpoolP256r1ApplicationCertificateType", "")),
 			},
@@ -6703,7 +6703,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23541),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EccBrainpoolP384r1ApplicationCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EccBrainpoolP384r1ApplicationCertificateType", "")),
 			},
@@ -6713,7 +6713,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23542),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EccCurve25519ApplicationCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EccCurve25519ApplicationCertificateType", "")),
 			},
@@ -6723,7 +6723,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23543),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EccCurve448ApplicationCertificateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EccCurve448ApplicationCertificateType", "")),
 			},
@@ -6733,7 +6733,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32260),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TrustListUpdateRequestedAuditEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TrustListUpdateRequestedAuditEventType", "")),
 			},
@@ -6743,7 +6743,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12561),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TrustListUpdatedAuditEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TrustListUpdatedAuditEventType", "")),
 			},
@@ -6753,7 +6753,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32285),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TransactionErrorType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TransactionErrorType", "")),
 			},
@@ -6763,7 +6763,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32286),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TransactionDiagnosticsType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TransactionDiagnosticsType", "")),
 			},
@@ -6773,7 +6773,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12581),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerConfigurationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerConfigurationType", "")),
 			},
@@ -6789,7 +6789,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32306),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CertificateUpdateRequestedAuditEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CertificateUpdateRequestedAuditEventType", "")),
 			},
@@ -6799,7 +6799,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12620),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("CertificateUpdatedAuditEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("CertificateUpdatedAuditEventType", "")),
 			},
@@ -6809,7 +6809,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12637),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerConfiguration")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerConfiguration", "")),
 			},
@@ -6819,7 +6819,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17496),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("KeyCredentialConfigurationFolderType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("KeyCredentialConfigurationFolderType", "")),
 			},
@@ -6829,7 +6829,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18155),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("KeyCredentialConfiguration")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("KeyCredentialConfiguration", "")),
 			},
@@ -6839,7 +6839,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18001),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("KeyCredentialConfigurationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("KeyCredentialConfigurationType", "")),
 			},
@@ -6849,7 +6849,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18011),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("KeyCredentialAuditEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("KeyCredentialAuditEventType", "")),
 			},
@@ -6870,7 +6870,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18029),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("KeyCredentialUpdatedAuditEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("KeyCredentialUpdatedAuditEventType", "")),
 			},
@@ -6880,7 +6880,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18047),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("KeyCredentialDeletedAuditEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("KeyCredentialDeletedAuditEventType", "")),
 			},
@@ -6890,7 +6890,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23556),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuthorizationServicesConfigurationFolderType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuthorizationServicesConfigurationFolderType", "")),
 			},
@@ -6900,7 +6900,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17732),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuthorizationServices")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuthorizationServices", "")),
 			},
@@ -6910,7 +6910,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17852),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AuthorizationServiceConfigurationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AuthorizationServiceConfigurationType", "")),
 			},
@@ -6920,7 +6920,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11187),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AggregateConfigurationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AggregateConfigurationType", "")),
 			},
@@ -6930,7 +6930,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2341),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Interpolative")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Interpolative", "")),
 			},
@@ -6940,7 +6940,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2342),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Average")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Average", "")),
 			},
@@ -6950,7 +6950,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2343),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TimeAverage")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TimeAverage", "")),
 			},
@@ -6960,7 +6960,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11285),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TimeAverage2")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TimeAverage2", "")),
 			},
@@ -6970,7 +6970,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2344),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Total")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Total", "")),
 			},
@@ -6980,7 +6980,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11304),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Total2")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Total2", "")),
 			},
@@ -6990,7 +6990,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2346),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Minimum")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Minimum", "")),
 			},
@@ -7000,7 +7000,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2347),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Maximum")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Maximum", "")),
 			},
@@ -7010,7 +7010,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2348),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MinimumActualTime")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MinimumActualTime", "")),
 			},
@@ -7020,7 +7020,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2349),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MaximumActualTime")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MaximumActualTime", "")),
 			},
@@ -7030,7 +7030,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2350),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Range")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Range", "")),
 			},
@@ -7040,7 +7040,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11286),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Minimum2")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Minimum2", "")),
 			},
@@ -7050,7 +7050,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11287),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Maximum2")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Maximum2", "")),
 			},
@@ -7060,7 +7060,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11305),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MinimumActualTime2")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MinimumActualTime2", "")),
 			},
@@ -7070,7 +7070,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11306),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MaximumActualTime2")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MaximumActualTime2", "")),
 			},
@@ -7080,7 +7080,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11288),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Range2")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Range2", "")),
 			},
@@ -7090,7 +7090,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2351),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AnnotationCount")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AnnotationCount", "")),
 			},
@@ -7100,7 +7100,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2352),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Count")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Count", "")),
 			},
@@ -7110,7 +7110,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11307),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DurationInStateZero")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DurationInStateZero", "")),
 			},
@@ -7120,7 +7120,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11308),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DurationInStateNonZero")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DurationInStateNonZero", "")),
 			},
@@ -7130,7 +7130,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2355),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NumberOfTransitions")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NumberOfTransitions", "")),
 			},
@@ -7140,7 +7140,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2357),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Start")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Start", "")),
 			},
@@ -7150,7 +7150,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2358),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("End")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("End", "")),
 			},
@@ -7160,7 +7160,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2359),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Delta")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Delta", "")),
 			},
@@ -7170,7 +7170,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11505),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StartBound")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StartBound", "")),
 			},
@@ -7180,7 +7180,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11506),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EndBound")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EndBound", "")),
 			},
@@ -7190,7 +7190,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11507),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DeltaBounds")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DeltaBounds", "")),
 			},
@@ -7200,7 +7200,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2360),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DurationGood")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DurationGood", "")),
 			},
@@ -7210,7 +7210,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2361),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DurationBad")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DurationBad", "")),
 			},
@@ -7220,7 +7220,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2362),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PercentGood")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PercentGood", "")),
 			},
@@ -7230,7 +7230,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2363),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PercentBad")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PercentBad", "")),
 			},
@@ -7240,7 +7240,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 2364),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("WorstQuality")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("WorstQuality", "")),
 			},
@@ -7250,7 +7250,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11292),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("WorstQuality2")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("WorstQuality2", "")),
 			},
@@ -7260,7 +7260,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11426),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StandardDeviationSample")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StandardDeviationSample", "")),
 			},
@@ -7270,7 +7270,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11427),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StandardDeviationPopulation")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StandardDeviationPopulation", "")),
 			},
@@ -7280,7 +7280,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11428),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("VarianceSample")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("VarianceSample", "")),
 			},
@@ -7290,7 +7290,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11429),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("VariancePopulation")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("VariancePopulation", "")),
 			},
@@ -7300,7 +7300,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15534),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataTypeSchemaHeader")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataTypeSchemaHeader", "")),
 			},
@@ -7321,7 +7321,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14525),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataTypeDescription")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataTypeDescription", "")),
 			},
@@ -7347,7 +7347,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15487),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StructureDescription")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StructureDescription", "")),
 			},
@@ -7357,7 +7357,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15488),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EnumDescription")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EnumDescription", "")),
 			},
@@ -7367,7 +7367,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15005),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SimpleTypeDescription")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SimpleTypeDescription", "")),
 			},
@@ -7377,7 +7377,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15006),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UABinaryFileDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UABinaryFileDataType", "")),
 			},
@@ -7387,7 +7387,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24105),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PortableQualifiedName")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PortableQualifiedName", "")),
 			},
@@ -7397,7 +7397,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24106),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PortableNodeId")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PortableNodeId", "")),
 			},
@@ -7407,7 +7407,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24107),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UnsignedRationalNumber")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UnsignedRationalNumber", "")),
 			},
@@ -7417,7 +7417,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14647),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubState")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubState", "")),
 			},
@@ -7427,7 +7427,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14523),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetMetaDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetMetaDataType", "")),
 			},
@@ -7437,7 +7437,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14524),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FieldMetaData")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FieldMetaData", "")),
 			},
@@ -7447,7 +7447,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15904),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetFieldFlags")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetFieldFlags", "")),
 			},
@@ -7457,7 +7457,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14593),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ConfigurationVersionDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ConfigurationVersionDataType", "")),
 			},
@@ -7467,7 +7467,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15578),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PublishedDataSetDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PublishedDataSetDataType", "")),
 			},
@@ -7477,7 +7477,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15580),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PublishedDataSetSourceDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PublishedDataSetSourceDataType", "")),
 			},
@@ -7503,7 +7503,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14273),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PublishedVariableDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PublishedVariableDataType", "")),
 			},
@@ -7513,7 +7513,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15581),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PublishedDataItemsDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PublishedDataItemsDataType", "")),
 			},
@@ -7523,7 +7523,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15582),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PublishedEventsDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PublishedEventsDataType", "")),
 			},
@@ -7533,7 +7533,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25269),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PublishedDataSetCustomSourceDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PublishedDataSetCustomSourceDataType", "")),
 			},
@@ -7543,7 +7543,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15583),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetFieldContentMask")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetFieldContentMask", "")),
 			},
@@ -7553,7 +7553,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15597),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetWriterDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetWriterDataType", "")),
 			},
@@ -7563,7 +7563,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15598),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetWriterTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetWriterTransportDataType", "")),
 			},
@@ -7579,7 +7579,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15605),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetWriterMessageDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetWriterMessageDataType", "")),
 			},
@@ -7600,7 +7600,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15609),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubGroupDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubGroupDataType", "")),
 			},
@@ -7621,7 +7621,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15480),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("WriterGroupDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("WriterGroupDataType", "")),
 			},
@@ -7631,7 +7631,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15611),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("WriterGroupTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("WriterGroupTransportDataType", "")),
 			},
@@ -7652,7 +7652,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15616),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("WriterGroupMessageDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("WriterGroupMessageDataType", "")),
 			},
@@ -7673,7 +7673,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15617),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubConnectionDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubConnectionDataType", "")),
 			},
@@ -7683,7 +7683,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15618),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ConnectionTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ConnectionTransportDataType", "")),
 			},
@@ -7704,7 +7704,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15502),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NetworkAddressDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NetworkAddressDataType", "")),
 			},
@@ -7720,7 +7720,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15510),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NetworkAddressUrlDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NetworkAddressUrlDataType", "")),
 			},
@@ -7730,7 +7730,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15520),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReaderGroupDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReaderGroupDataType", "")),
 			},
@@ -7740,7 +7740,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15621),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReaderGroupTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReaderGroupTransportDataType", "")),
 			},
@@ -7750,7 +7750,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15622),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReaderGroupMessageDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReaderGroupMessageDataType", "")),
 			},
@@ -7760,7 +7760,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15623),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetReaderDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetReaderDataType", "")),
 			},
@@ -7770,7 +7770,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15628),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetReaderTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetReaderTransportDataType", "")),
 			},
@@ -7791,7 +7791,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15629),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetReaderMessageDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetReaderMessageDataType", "")),
 			},
@@ -7812,7 +7812,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15630),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SubscribedDataSetDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SubscribedDataSetDataType", "")),
 			},
@@ -7843,7 +7843,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15631),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TargetVariablesDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TargetVariablesDataType", "")),
 			},
@@ -7853,7 +7853,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14744),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FieldTargetDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FieldTargetDataType", "")),
 			},
@@ -7863,7 +7863,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15874),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OverrideValueHandling")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OverrideValueHandling", "")),
 			},
@@ -7873,7 +7873,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15635),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SubscribedDataSetMirrorDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SubscribedDataSetMirrorDataType", "")),
 			},
@@ -7883,7 +7883,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15530),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubConfigurationDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubConfigurationDataType", "")),
 			},
@@ -7899,7 +7899,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23599),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StandaloneSubscribedDataSetRefDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StandaloneSubscribedDataSetRefDataType", "")),
 			},
@@ -7909,7 +7909,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23600),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StandaloneSubscribedDataSetDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StandaloneSubscribedDataSetDataType", "")),
 			},
@@ -7919,7 +7919,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23601),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SecurityGroupDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SecurityGroupDataType", "")),
 			},
@@ -7929,7 +7929,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25270),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubKeyPushTargetDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubKeyPushTargetDataType", "")),
 			},
@@ -7939,7 +7939,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23602),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubConfiguration2DataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubConfiguration2DataType", "")),
 			},
@@ -7949,7 +7949,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 20408),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetOrderingType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetOrderingType", "")),
 			},
@@ -7959,7 +7959,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15642),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UadpNetworkMessageContentMask")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UadpNetworkMessageContentMask", "")),
 			},
@@ -7969,7 +7969,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15645),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UadpWriterGroupMessageDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UadpWriterGroupMessageDataType", "")),
 			},
@@ -7979,7 +7979,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15646),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UadpDataSetMessageContentMask")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UadpDataSetMessageContentMask", "")),
 			},
@@ -7989,7 +7989,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15652),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UadpDataSetWriterMessageDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UadpDataSetWriterMessageDataType", "")),
 			},
@@ -7999,7 +7999,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15653),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UadpDataSetReaderMessageDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UadpDataSetReaderMessageDataType", "")),
 			},
@@ -8009,7 +8009,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15654),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("JsonNetworkMessageContentMask")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("JsonNetworkMessageContentMask", "")),
 			},
@@ -8019,7 +8019,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15657),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("JsonWriterGroupMessageDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("JsonWriterGroupMessageDataType", "")),
 			},
@@ -8029,7 +8029,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15658),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("JsonDataSetMessageContentMask")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("JsonDataSetMessageContentMask", "")),
 			},
@@ -8039,7 +8039,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15664),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("JsonDataSetWriterMessageDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("JsonDataSetWriterMessageDataType", "")),
 			},
@@ -8049,7 +8049,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15665),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("JsonDataSetReaderMessageDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("JsonDataSetReaderMessageDataType", "")),
 			},
@@ -8059,7 +8059,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23603),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("QosDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("QosDataType", "")),
 			},
@@ -8080,7 +8080,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23604),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TransmitQosDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TransmitQosDataType", "")),
 			},
@@ -8096,7 +8096,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23605),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TransmitQosPriorityDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TransmitQosPriorityDataType", "")),
 			},
@@ -8106,7 +8106,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23608),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReceiveQosDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReceiveQosDataType", "")),
 			},
@@ -8122,7 +8122,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23609),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReceiveQosPriorityDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReceiveQosPriorityDataType", "")),
 			},
@@ -8132,7 +8132,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17467),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DatagramConnectionTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DatagramConnectionTransportDataType", "")),
 			},
@@ -8148,7 +8148,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23612),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DatagramConnectionTransport2DataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DatagramConnectionTransport2DataType", "")),
 			},
@@ -8158,7 +8158,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15532),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DatagramWriterGroupTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DatagramWriterGroupTransportDataType", "")),
 			},
@@ -8174,7 +8174,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23613),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DatagramWriterGroupTransport2DataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DatagramWriterGroupTransport2DataType", "")),
 			},
@@ -8184,7 +8184,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23614),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DatagramDataSetReaderTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DatagramDataSetReaderTransportDataType", "")),
 			},
@@ -8194,7 +8194,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15007),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BrokerConnectionTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BrokerConnectionTransportDataType", "")),
 			},
@@ -8204,7 +8204,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15008),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BrokerTransportQualityOfService")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BrokerTransportQualityOfService", "")),
 			},
@@ -8214,7 +8214,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15667),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BrokerWriterGroupTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BrokerWriterGroupTransportDataType", "")),
 			},
@@ -8224,7 +8224,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15669),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BrokerDataSetWriterTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BrokerDataSetWriterTransportDataType", "")),
 			},
@@ -8234,7 +8234,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15670),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BrokerDataSetReaderTransportDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BrokerDataSetReaderTransportDataType", "")),
 			},
@@ -8244,7 +8244,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15906),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubKeyServiceType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubKeyServiceType", "")),
 			},
@@ -8260,7 +8260,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15452),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SecurityGroupFolderType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SecurityGroupFolderType", "")),
 			},
@@ -8270,7 +8270,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15471),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SecurityGroupType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SecurityGroupType", "")),
 			},
@@ -8280,7 +8280,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25345),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasPushedSecurityGroup")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasPushedSecurityGroup", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("HasPushTarget", "")),
@@ -8291,7 +8291,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25337),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubKeyPushTargetType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubKeyPushTargetType", "")),
 			},
@@ -8301,7 +8301,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25346),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubKeyPushTargetFolderType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubKeyPushTargetFolderType", "")),
 			},
@@ -8311,7 +8311,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14416),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PublishSubscribeType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PublishSubscribeType", "")),
 			},
@@ -8321,7 +8321,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14443),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PublishSubscribe")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PublishSubscribe", "")),
 			},
@@ -8331,7 +8331,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32405),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetClasses")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetClasses", "")),
 			},
@@ -8341,7 +8341,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14476),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasPubSubConnection")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasPubSubConnection", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("PubSubConnectionOf", "")),
@@ -8352,7 +8352,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25482),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubConfigurationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubConfigurationType", "")),
 			},
@@ -8362,7 +8362,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25517),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubConfigurationRefMask")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubConfigurationRefMask", "")),
 			},
@@ -8372,7 +8372,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25519),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubConfigurationRefDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubConfigurationRefDataType", "")),
 			},
@@ -8382,7 +8382,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25520),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubConfigurationValueDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubConfigurationValueDataType", "")),
 			},
@@ -8392,7 +8392,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14509),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PublishedDataSetType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PublishedDataSetType", "")),
 			},
@@ -8413,7 +8413,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15489),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ExtensionFieldsType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ExtensionFieldsType", "")),
 			},
@@ -8423,7 +8423,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14936),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetToWriter")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetToWriter", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("WriterToDataSet", "")),
@@ -8434,7 +8434,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14534),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PublishedDataItemsType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PublishedDataItemsType", "")),
 			},
@@ -8444,7 +8444,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14572),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PublishedEventsType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PublishedEventsType", "")),
 			},
@@ -8454,7 +8454,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14477),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetFolderType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetFolderType", "")),
 			},
@@ -8464,7 +8464,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14209),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubConnectionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubConnectionType", "")),
 			},
@@ -8474,7 +8474,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17721),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ConnectionTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ConnectionTransportType", "")),
 			},
@@ -8495,7 +8495,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14232),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubGroupType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubGroupType", "")),
 			},
@@ -8516,7 +8516,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17725),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("WriterGroupType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("WriterGroupType", "")),
 			},
@@ -8526,7 +8526,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15296),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasDataSetWriter")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasDataSetWriter", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsWriterInGroup", "")),
@@ -8537,7 +8537,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18804),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasWriterGroup")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasWriterGroup", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsWriterGroupOf", "")),
@@ -8548,7 +8548,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17997),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("WriterGroupTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("WriterGroupTransportType", "")),
 			},
@@ -8569,7 +8569,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17998),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("WriterGroupMessageType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("WriterGroupMessageType", "")),
 			},
@@ -8590,7 +8590,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17999),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReaderGroupType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReaderGroupType", "")),
 			},
@@ -8600,7 +8600,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15297),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasDataSetReader")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasDataSetReader", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsReaderInGroup", "")),
@@ -8611,7 +8611,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18805),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasReaderGroup")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasReaderGroup", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsReaderGroupOf", "")),
@@ -8622,7 +8622,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21090),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReaderGroupTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReaderGroupTransportType", "")),
 			},
@@ -8632,7 +8632,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21091),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReaderGroupMessageType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReaderGroupMessageType", "")),
 			},
@@ -8642,7 +8642,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15298),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetWriterType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetWriterType", "")),
 			},
@@ -8652,7 +8652,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15305),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetWriterTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetWriterTransportType", "")),
 			},
@@ -8668,7 +8668,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21096),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetWriterMessageType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetWriterMessageType", "")),
 			},
@@ -8689,7 +8689,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15306),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetReaderType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetReaderType", "")),
 			},
@@ -8699,7 +8699,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15319),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetReaderTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetReaderTransportType", "")),
 			},
@@ -8720,7 +8720,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21104),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataSetReaderMessageType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataSetReaderMessageType", "")),
 			},
@@ -8741,7 +8741,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15108),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SubscribedDataSetType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SubscribedDataSetType", "")),
 			},
@@ -8762,7 +8762,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15111),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TargetVariablesType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TargetVariablesType", "")),
 			},
@@ -8772,7 +8772,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15127),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SubscribedDataSetMirrorType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SubscribedDataSetMirrorType", "")),
 			},
@@ -8782,7 +8782,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23795),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SubscribedDataSetFolderType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SubscribedDataSetFolderType", "")),
 			},
@@ -8792,7 +8792,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23828),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StandaloneSubscribedDataSetType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StandaloneSubscribedDataSetType", "")),
 			},
@@ -8802,7 +8802,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14643),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubStatusType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubStatusType", "")),
 			},
@@ -8812,7 +8812,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19677),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubDiagnosticsType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubDiagnosticsType", "")),
 			},
@@ -8853,7 +8853,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19723),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DiagnosticsLevel")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DiagnosticsLevel", "")),
 			},
@@ -8863,7 +8863,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19725),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubDiagnosticsCounterType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubDiagnosticsCounterType", "")),
 			},
@@ -8873,7 +8873,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19730),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubDiagnosticsCounterClassification")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubDiagnosticsCounterClassification", "")),
 			},
@@ -8883,7 +8883,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19732),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubDiagnosticsRootType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubDiagnosticsRootType", "")),
 			},
@@ -8893,7 +8893,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19786),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubDiagnosticsConnectionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubDiagnosticsConnectionType", "")),
 			},
@@ -8903,7 +8903,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19834),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubDiagnosticsWriterGroupType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubDiagnosticsWriterGroupType", "")),
 			},
@@ -8913,7 +8913,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19903),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubDiagnosticsReaderGroupType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubDiagnosticsReaderGroupType", "")),
 			},
@@ -8923,7 +8923,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19968),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubDiagnosticsDataSetWriterType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubDiagnosticsDataSetWriterType", "")),
 			},
@@ -8933,7 +8933,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 20027),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubDiagnosticsDataSetReaderType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubDiagnosticsDataSetReaderType", "")),
 			},
@@ -8943,7 +8943,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23832),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubCapabilitiesType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubCapabilitiesType", "")),
 			},
@@ -8953,7 +8953,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15535),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubStatusEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubStatusEventType", "")),
 			},
@@ -8974,7 +8974,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15548),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubTransportLimitsExceedEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubTransportLimitsExceedEventType", "")),
 			},
@@ -8984,7 +8984,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15563),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PubSubCommunicationFailureEventType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PubSubCommunicationFailureEventType", "")),
 			},
@@ -8994,7 +8994,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21105),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UadpWriterGroupMessageType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UadpWriterGroupMessageType", "")),
 			},
@@ -9004,7 +9004,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21111),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UadpDataSetWriterMessageType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UadpDataSetWriterMessageType", "")),
 			},
@@ -9014,7 +9014,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21116),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UadpDataSetReaderMessageType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UadpDataSetReaderMessageType", "")),
 			},
@@ -9024,7 +9024,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21126),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("JsonWriterGroupMessageType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("JsonWriterGroupMessageType", "")),
 			},
@@ -9034,7 +9034,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21128),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("JsonDataSetWriterMessageType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("JsonDataSetWriterMessageType", "")),
 			},
@@ -9044,7 +9044,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21130),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("JsonDataSetReaderMessageType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("JsonDataSetReaderMessageType", "")),
 			},
@@ -9054,7 +9054,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15064),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DatagramConnectionTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DatagramConnectionTransportType", "")),
 			},
@@ -9064,7 +9064,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21133),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DatagramWriterGroupTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DatagramWriterGroupTransportType", "")),
 			},
@@ -9074,7 +9074,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24016),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DatagramDataSetReaderTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DatagramDataSetReaderTransportType", "")),
 			},
@@ -9084,7 +9084,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15155),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BrokerConnectionTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BrokerConnectionTransportType", "")),
 			},
@@ -9094,7 +9094,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21136),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BrokerWriterGroupTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BrokerWriterGroupTransportType", "")),
 			},
@@ -9104,7 +9104,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21138),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BrokerDataSetWriterTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BrokerDataSetWriterTransportType", "")),
 			},
@@ -9114,7 +9114,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21142),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BrokerDataSetReaderTransportType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BrokerDataSetReaderTransportType", "")),
 			},
@@ -9124,7 +9124,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21145),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NetworkAddressType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NetworkAddressType", "")),
 			},
@@ -9140,7 +9140,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21147),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NetworkAddressUrlType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NetworkAddressUrlType", "")),
 			},
@@ -9150,7 +9150,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23455),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AliasNameType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AliasNameType", "")),
 			},
@@ -9160,7 +9160,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23456),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AliasNameCategoryType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AliasNameCategoryType", "")),
 			},
@@ -9170,7 +9170,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23468),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AliasNameDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AliasNameDataType", "")),
 			},
@@ -9180,7 +9180,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23469),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AliasFor")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AliasFor", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("HasAlias", "")),
@@ -9191,7 +9191,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23470),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Aliases")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Aliases", "")),
 			},
@@ -9201,7 +9201,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23479),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TagVariables")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TagVariables", "")),
 			},
@@ -9211,7 +9211,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23488),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Topics")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Topics", "")),
 			},
@@ -9221,7 +9221,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24264),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UserManagementType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UserManagementType", "")),
 			},
@@ -9231,7 +9231,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24277),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PasswordOptionsMask")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PasswordOptionsMask", "")),
 			},
@@ -9241,7 +9241,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24279),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UserConfigurationMask")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UserConfigurationMask", "")),
 			},
@@ -9251,7 +9251,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24281),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UserManagementDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UserManagementDataType", "")),
 			},
@@ -9261,7 +9261,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24290),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UserManagement")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UserManagement", "")),
 			},
@@ -9271,7 +9271,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19077),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MultiStateDictionaryEntryDiscreteBaseType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MultiStateDictionaryEntryDiscreteBaseType", "")),
 			},
@@ -9287,7 +9287,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19084),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MultiStateDictionaryEntryDiscreteType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MultiStateDictionaryEntryDiscreteType", "")),
 			},
@@ -9297,7 +9297,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25726),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EncodedTicket")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EncodedTicket", "")),
 			},
@@ -9307,7 +9307,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25731),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ApplicationConfigurationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ApplicationConfigurationType", "")),
 			},
@@ -9317,7 +9317,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 26871),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ProvisionableDeviceType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ProvisionableDeviceType", "")),
 			},
@@ -9327,7 +9327,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 29878),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ProvisionableDevice")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ProvisionableDevice", "")),
 			},
@@ -9337,7 +9337,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24148),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IIetfBaseNetworkInterfaceType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IIetfBaseNetworkInterfaceType", "")),
 			},
@@ -9347,7 +9347,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24158),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IIeeeBaseEthernetPortType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IIeeeBaseEthernetPortType", "")),
 			},
@@ -9357,7 +9357,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24233),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IIeeeAutoNegotiationStatusType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IIeeeAutoNegotiationStatusType", "")),
 			},
@@ -9367,7 +9367,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24167),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IBaseEthernetCapabilitiesType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IBaseEthernetCapabilitiesType", "")),
 			},
@@ -9377,7 +9377,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25218),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IVlanIdType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IVlanIdType", "")),
 			},
@@ -9387,7 +9387,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24169),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ISrClassType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ISrClassType", "")),
 			},
@@ -9397,7 +9397,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24173),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IIeeeBaseTsnStreamType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IIeeeBaseTsnStreamType", "")),
 			},
@@ -9407,7 +9407,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24179),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IIeeeBaseTsnTrafficSpecificationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IIeeeBaseTsnTrafficSpecificationType", "")),
 			},
@@ -9417,7 +9417,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24183),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IIeeeBaseTsnStatusStreamType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IIeeeBaseTsnStatusStreamType", "")),
 			},
@@ -9427,7 +9427,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24188),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IIeeeTsnInterfaceConfigurationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IIeeeTsnInterfaceConfigurationType", "")),
 			},
@@ -9448,7 +9448,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24191),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IIeeeTsnInterfaceConfigurationTalkerType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IIeeeTsnInterfaceConfigurationTalkerType", "")),
 			},
@@ -9458,7 +9458,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24195),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IIeeeTsnInterfaceConfigurationListenerType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IIeeeTsnInterfaceConfigurationListenerType", "")),
 			},
@@ -9468,7 +9468,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24199),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IIeeeTsnMacAddressType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IIeeeTsnMacAddressType", "")),
 			},
@@ -9478,7 +9478,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24202),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IIeeeTsnVlanTagType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IIeeeTsnVlanTagType", "")),
 			},
@@ -9488,7 +9488,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24205),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IPriorityMappingEntryType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IPriorityMappingEntryType", "")),
 			},
@@ -9498,7 +9498,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24210),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Duplex")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Duplex", "")),
 			},
@@ -9508,7 +9508,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24212),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("InterfaceAdminStatus")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("InterfaceAdminStatus", "")),
 			},
@@ -9518,7 +9518,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24214),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("InterfaceOperStatus")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("InterfaceOperStatus", "")),
 			},
@@ -9528,7 +9528,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24216),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NegotiationStatus")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NegotiationStatus", "")),
 			},
@@ -9538,7 +9538,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24218),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TsnFailureCode")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TsnFailureCode", "")),
 			},
@@ -9548,7 +9548,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24220),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TsnStreamState")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TsnStreamState", "")),
 			},
@@ -9558,7 +9558,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24222),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TsnTalkerStatus")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TsnTalkerStatus", "")),
 			},
@@ -9568,7 +9568,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24224),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TsnListenerStatus")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TsnListenerStatus", "")),
 			},
@@ -9578,7 +9578,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25220),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PriorityMappingEntryType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PriorityMappingEntryType", "")),
 			},
@@ -9588,7 +9588,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24226),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Resources")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Resources", "")),
 			},
@@ -9598,7 +9598,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24227),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Communication")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Communication", "")),
 			},
@@ -9608,7 +9608,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24228),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MappingTables")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MappingTables", "")),
 			},
@@ -9618,7 +9618,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24229),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NetworkInterfaces")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NetworkInterfaces", "")),
 			},
@@ -9628,7 +9628,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24230),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Streams")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Streams", "")),
 			},
@@ -9638,7 +9638,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24231),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TalkerStreams")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TalkerStreams", "")),
 			},
@@ -9648,7 +9648,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24232),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ListenerStreams")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ListenerStreams", "")),
 			},
@@ -9658,7 +9658,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25221),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IetfBaseNetworkInterfaceType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IetfBaseNetworkInterfaceType", "")),
 			},
@@ -9668,7 +9668,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25227),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObjectType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObjectType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PriorityMappingTableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PriorityMappingTableType", "")),
 			},
@@ -9678,7 +9678,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25237),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UsesPriorityMappingTable")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UsesPriorityMappingTable", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("UsedByNetworkInterface", "")),
@@ -9689,7 +9689,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25238),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasLowerLayerInterface")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasLowerLayerInterface", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("HasHigherLayerInterface", "")),
@@ -9700,7 +9700,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25253),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IsExecutableOn")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IsExecutableOn", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("CanExecute", "")),
@@ -9711,7 +9711,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25254),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Controls")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Controls", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsControlledBy", "")),
@@ -9722,7 +9722,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25255),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Utilizes")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Utilizes", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsUtilizedBy", "")),
@@ -9744,7 +9744,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25265),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IsExecutingOn")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IsExecutingOn", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("Executes", "")),
@@ -9755,7 +9755,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25256),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Requires")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Requires", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("IsRequiredBy", "")),
@@ -9766,7 +9766,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25257),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IsPhysicallyConnectedTo")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IsPhysicallyConnectedTo", "")),
 			},
@@ -9776,7 +9776,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25258),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RepresentsSameEntityAs")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RepresentsSameEntityAs", "")),
 			},
@@ -9797,7 +9797,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25259),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RepresentsSameHardwareAs")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RepresentsSameHardwareAs", "")),
 			},
@@ -9807,7 +9807,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25260),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RepresentsSameFunctionalityAs")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RepresentsSameFunctionalityAs", "")),
 			},
@@ -9817,7 +9817,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25261),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IsHostedBy")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IsHostedBy", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("Hosts", "")),
@@ -9828,7 +9828,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25262),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasPhysicalComponent")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasPhysicalComponent", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("PhysicalComponentOf", "")),
@@ -9850,7 +9850,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25263),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasContainedComponent")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasContainedComponent", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("ContainedComponentOf", "")),
@@ -9861,7 +9861,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25264),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasAttachedComponent")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasAttachedComponent", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("AttachedComponentOf", "")),
@@ -9872,7 +9872,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32679),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassReferenceType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassReferenceType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HasReferenceDescription")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HasReferenceDescription", "")),
 				ua.AttributeIDInverseName: ua.MustVariant(attrs.InverseName("ReferenceDescriptionOf", "")),
@@ -9883,7 +9883,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32657),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariableType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariableType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReferenceDescriptionVariableType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReferenceDescriptionVariableType", "")),
 			},
@@ -9893,7 +9893,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32659),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReferenceDescriptionDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReferenceDescriptionDataType", "")),
 			},
@@ -9903,7 +9903,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32660),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ReferenceListEntryDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ReferenceListEntryDataType", "")),
 			},
@@ -9913,7 +9913,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 256),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IdType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IdType", "")),
 			},
@@ -9923,7 +9923,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 257),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NodeClass")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NodeClass", "")),
 			},
@@ -9933,7 +9933,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 94),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PermissionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PermissionType", "")),
 			},
@@ -9943,7 +9943,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15031),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AccessLevelType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AccessLevelType", "")),
 			},
@@ -9953,7 +9953,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15406),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AccessLevelExType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AccessLevelExType", "")),
 			},
@@ -9963,7 +9963,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15033),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EventNotifierType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EventNotifierType", "")),
 			},
@@ -9973,7 +9973,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 95),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AccessRestrictionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AccessRestrictionType", "")),
 			},
@@ -9983,7 +9983,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 96),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RolePermissionType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RolePermissionType", "")),
 			},
@@ -9993,7 +9993,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 97),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DataTypeDefinition")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DataTypeDefinition", "")),
 			},
@@ -10014,7 +10014,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 98),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StructureType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StructureType", "")),
 			},
@@ -10024,7 +10024,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 101),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StructureField")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StructureField", "")),
 			},
@@ -10034,7 +10034,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 99),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StructureDefinition")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StructureDefinition", "")),
 			},
@@ -10044,7 +10044,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 100),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EnumDefinition")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EnumDefinition", "")),
 			},
@@ -10054,7 +10054,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 296),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Argument")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Argument", "")),
 			},
@@ -10064,7 +10064,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 7594),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EnumValueType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EnumValueType", "")),
 			},
@@ -10080,7 +10080,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 102),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EnumField")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EnumField", "")),
 			},
@@ -10090,7 +10090,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12755),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("OptionSet")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("OptionSet", "")),
 			},
@@ -10100,7 +10100,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12877),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NormalizedString")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NormalizedString", "")),
 			},
@@ -10110,7 +10110,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12878),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DecimalString")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DecimalString", "")),
 			},
@@ -10120,7 +10120,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12879),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DurationString")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DurationString", "")),
 			},
@@ -10130,7 +10130,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12880),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TimeString")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TimeString", "")),
 			},
@@ -10140,7 +10140,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12881),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DateString")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DateString", "")),
 			},
@@ -10150,7 +10150,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 290),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Duration")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Duration", "")),
 			},
@@ -10160,7 +10160,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 294),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UtcTime")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UtcTime", "")),
 			},
@@ -10170,7 +10170,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 295),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("LocaleId")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("LocaleId", "")),
 			},
@@ -10180,7 +10180,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 8912),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("TimeZoneDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("TimeZoneDataType", "")),
 			},
@@ -10190,7 +10190,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17588),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Index")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Index", "")),
 			},
@@ -10200,7 +10200,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 288),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IntegerId")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IntegerId", "")),
 			},
@@ -10210,7 +10210,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 307),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ApplicationType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ApplicationType", "")),
 			},
@@ -10220,7 +10220,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 308),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ApplicationDescription")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ApplicationDescription", "")),
 			},
@@ -10230,7 +10230,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 20998),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("VersionTime")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("VersionTime", "")),
 			},
@@ -10240,7 +10240,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12189),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerOnNetwork")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerOnNetwork", "")),
 			},
@@ -10250,7 +10250,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 311),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ApplicationInstanceCertificate")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ApplicationInstanceCertificate", "")),
 			},
@@ -10260,7 +10260,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 302),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MessageSecurityMode")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MessageSecurityMode", "")),
 			},
@@ -10270,7 +10270,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 303),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UserTokenType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UserTokenType", "")),
 			},
@@ -10280,7 +10280,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 304),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UserTokenPolicy")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UserTokenPolicy", "")),
 			},
@@ -10290,7 +10290,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 312),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EndpointDescription")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EndpointDescription", "")),
 			},
@@ -10300,7 +10300,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 432),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RegisteredServer")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RegisteredServer", "")),
 			},
@@ -10310,7 +10310,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12890),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DiscoveryConfiguration")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DiscoveryConfiguration", "")),
 			},
@@ -10326,7 +10326,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12891),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MdnsDiscoveryConfiguration")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MdnsDiscoveryConfiguration", "")),
 			},
@@ -10336,7 +10336,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 315),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SecurityTokenRequestType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SecurityTokenRequestType", "")),
 			},
@@ -10346,7 +10346,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 344),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SignedSoftwareCertificate")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SignedSoftwareCertificate", "")),
 			},
@@ -10356,7 +10356,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 388),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SessionAuthenticationToken")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SessionAuthenticationToken", "")),
 			},
@@ -10366,7 +10366,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 316),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UserIdentityToken")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UserIdentityToken", "")),
 			},
@@ -10397,7 +10397,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 319),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AnonymousIdentityToken")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AnonymousIdentityToken", "")),
 			},
@@ -10407,7 +10407,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 322),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("UserNameIdentityToken")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("UserNameIdentityToken", "")),
 			},
@@ -10417,7 +10417,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 325),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("X509IdentityToken")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("X509IdentityToken", "")),
 			},
@@ -10427,7 +10427,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 938),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("IssuedIdentityToken")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("IssuedIdentityToken", "")),
 			},
@@ -10437,7 +10437,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 348),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NodeAttributesMask")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NodeAttributesMask", "")),
 			},
@@ -10447,7 +10447,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 376),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AddNodesItem")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AddNodesItem", "")),
 			},
@@ -10457,7 +10457,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 379),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AddReferencesItem")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AddReferencesItem", "")),
 			},
@@ -10467,7 +10467,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 382),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DeleteNodesItem")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DeleteNodesItem", "")),
 			},
@@ -10477,7 +10477,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 385),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DeleteReferencesItem")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DeleteReferencesItem", "")),
 			},
@@ -10487,7 +10487,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 347),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AttributeWriteMask")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AttributeWriteMask", "")),
 			},
@@ -10497,7 +10497,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 521),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ContinuationPoint")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ContinuationPoint", "")),
 			},
@@ -10507,7 +10507,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 537),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RelativePathElement")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RelativePathElement", "")),
 			},
@@ -10517,7 +10517,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 540),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RelativePath")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RelativePath", "")),
 			},
@@ -10527,7 +10527,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 289),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Counter")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Counter", "")),
 			},
@@ -10537,7 +10537,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 291),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NumericRange")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NumericRange", "")),
 			},
@@ -10547,7 +10547,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 331),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EndpointConfiguration")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EndpointConfiguration", "")),
 			},
@@ -10557,7 +10557,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 576),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FilterOperator")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FilterOperator", "")),
 			},
@@ -10567,7 +10567,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 583),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ContentFilterElement")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ContentFilterElement", "")),
 			},
@@ -10577,7 +10577,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 586),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ContentFilter")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ContentFilter", "")),
 			},
@@ -10587,7 +10587,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 589),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("FilterOperand")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("FilterOperand", "")),
 			},
@@ -10618,7 +10618,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 592),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ElementOperand")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ElementOperand", "")),
 			},
@@ -10628,7 +10628,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 595),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("LiteralOperand")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("LiteralOperand", "")),
 			},
@@ -10638,7 +10638,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 598),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AttributeOperand")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AttributeOperand", "")),
 			},
@@ -10648,7 +10648,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 601),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SimpleAttributeOperand")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SimpleAttributeOperand", "")),
 			},
@@ -10658,7 +10658,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 659),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HistoryEvent")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HistoryEvent", "")),
 			},
@@ -10668,7 +10668,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11234),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HistoryUpdateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HistoryUpdateType", "")),
 			},
@@ -10678,7 +10678,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11293),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("PerformUpdateType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("PerformUpdateType", "")),
 			},
@@ -10688,7 +10688,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 719),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("MonitoringFilter")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("MonitoringFilter", "")),
 			},
@@ -10704,7 +10704,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 725),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EventFilter")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EventFilter", "")),
 			},
@@ -10714,7 +10714,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 948),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AggregateConfiguration")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AggregateConfiguration", "")),
 			},
@@ -10724,7 +10724,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 920),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("HistoryEventFieldList")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("HistoryEventFieldList", "")),
 			},
@@ -10734,7 +10734,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 338),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("BuildInfo")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("BuildInfo", "")),
 			},
@@ -10744,7 +10744,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 851),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RedundancySupport")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RedundancySupport", "")),
 			},
@@ -10754,7 +10754,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 852),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerState")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerState", "")),
 			},
@@ -10764,7 +10764,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 853),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("RedundantServerDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("RedundantServerDataType", "")),
 			},
@@ -10774,7 +10774,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11943),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EndpointUrlListDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EndpointUrlListDataType", "")),
 			},
@@ -10784,7 +10784,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11944),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("NetworkGroupDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("NetworkGroupDataType", "")),
 			},
@@ -10794,7 +10794,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 856),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SamplingIntervalDiagnosticsDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SamplingIntervalDiagnosticsDataType", "")),
 			},
@@ -10804,7 +10804,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 859),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerDiagnosticsSummaryDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerDiagnosticsSummaryDataType", "")),
 			},
@@ -10814,7 +10814,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 862),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServerStatusDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServerStatusDataType", "")),
 			},
@@ -10824,7 +10824,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 865),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SessionDiagnosticsDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SessionDiagnosticsDataType", "")),
 			},
@@ -10834,7 +10834,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 868),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SessionSecurityDiagnosticsDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SessionSecurityDiagnosticsDataType", "")),
 			},
@@ -10844,7 +10844,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 871),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ServiceCounterDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ServiceCounterDataType", "")),
 			},
@@ -10854,7 +10854,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 299),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("StatusResult")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("StatusResult", "")),
 			},
@@ -10864,7 +10864,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 874),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SubscriptionDiagnosticsDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SubscriptionDiagnosticsDataType", "")),
 			},
@@ -10874,7 +10874,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 877),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ModelChangeStructureDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ModelChangeStructureDataType", "")),
 			},
@@ -10884,7 +10884,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 897),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("SemanticChangeStructureDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("SemanticChangeStructureDataType", "")),
 			},
@@ -10894,7 +10894,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 884),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Range")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Range", "")),
 			},
@@ -10904,7 +10904,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 887),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("EUInformation")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("EUInformation", "")),
 			},
@@ -10914,7 +10914,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12077),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AxisScaleEnumeration")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AxisScaleEnumeration", "")),
 			},
@@ -10924,7 +10924,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12171),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ComplexNumberType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ComplexNumberType", "")),
 			},
@@ -10934,7 +10934,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12172),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("DoubleComplexNumberType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("DoubleComplexNumberType", "")),
 			},
@@ -10944,7 +10944,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12079),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("AxisInformation")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("AxisInformation", "")),
 			},
@@ -10954,7 +10954,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12080),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("XVType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("XVType", "")),
 			},
@@ -10964,7 +10964,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 894),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ProgramDiagnosticDataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ProgramDiagnosticDataType", "")),
 			},
@@ -10974,7 +10974,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24033),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ProgramDiagnostic2DataType")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ProgramDiagnostic2DataType", "")),
 			},
@@ -10984,7 +10984,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 891),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Annotation")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Annotation", "")),
 			},
@@ -10994,7 +10994,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 890),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassDataType)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassDataType)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("ExceptionDeviationFormat")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("ExceptionDeviationFormat", "")),
 			},
@@ -11004,7 +11004,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12766),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11014,7 +11014,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14846),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11024,7 +11024,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17537),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11034,7 +11034,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17549),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11044,7 +11044,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15671),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11054,7 +11054,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18815),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11064,7 +11064,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18816),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11074,7 +11074,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18817),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11084,7 +11084,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18818),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11094,7 +11094,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18819),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11104,7 +11104,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18820),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11114,7 +11114,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18821),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11124,7 +11124,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18822),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11134,7 +11134,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18823),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11144,7 +11144,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15736),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11154,7 +11154,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23507),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11164,7 +11164,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12680),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11174,7 +11174,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32382),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11184,7 +11184,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15676),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11194,7 +11194,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 125),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11204,7 +11204,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 126),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11214,7 +11214,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 127),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11224,7 +11224,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15421),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11234,7 +11234,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15422),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11244,7 +11244,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24108),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11254,7 +11254,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24109),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11264,7 +11264,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24110),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11274,7 +11274,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 124),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11284,7 +11284,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14839),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11294,7 +11294,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14847),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11304,7 +11304,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15677),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11314,7 +11314,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15678),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11324,7 +11324,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14323),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11334,7 +11334,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15679),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11344,7 +11344,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15681),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11354,7 +11354,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25529),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11364,7 +11364,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15682),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11374,7 +11374,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15683),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11384,7 +11384,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15688),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11394,7 +11394,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15689),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11404,7 +11404,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21150),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11414,7 +11414,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15691),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11424,7 +11424,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15693),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11434,7 +11434,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15694),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11444,7 +11444,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15695),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11454,7 +11454,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21151),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11464,7 +11464,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21152),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11474,7 +11474,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21153),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11484,7 +11484,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15701),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11494,7 +11494,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15702),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11504,7 +11504,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15703),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11514,7 +11514,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15705),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11524,7 +11524,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15706),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11534,7 +11534,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15707),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11544,7 +11544,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15712),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11554,7 +11554,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14848),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11564,7 +11564,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15713),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11574,7 +11574,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21154),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11584,7 +11584,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23851),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11594,7 +11594,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23852),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11604,7 +11604,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23853),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11614,7 +11614,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25530),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11624,7 +11624,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23854),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11634,7 +11634,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15715),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11644,7 +11644,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15717),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11654,7 +11654,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15718),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11664,7 +11664,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15719),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11674,7 +11674,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15724),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11684,7 +11684,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15725),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11694,7 +11694,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23855),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11704,7 +11704,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23856),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11714,7 +11714,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23857),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11724,7 +11724,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23860),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11734,7 +11734,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23861),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11744,7 +11744,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17468),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11754,7 +11754,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23864),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11764,7 +11764,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21155),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11774,7 +11774,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23865),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11784,7 +11784,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23866),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11794,7 +11794,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15479),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11804,7 +11804,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15727),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11814,7 +11814,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15729),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11824,7 +11824,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15733),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11834,7 +11834,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25531),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11844,7 +11844,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25532),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11854,7 +11854,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23499),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11864,7 +11864,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24292),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11874,7 +11874,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25239),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11884,7 +11884,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32661),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11894,7 +11894,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32662),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11904,7 +11904,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 128),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11914,7 +11914,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 121),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11924,7 +11924,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14844),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11934,7 +11934,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 122),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11944,7 +11944,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 123),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11954,7 +11954,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 298),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11964,7 +11964,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 8251),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11974,7 +11974,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14845),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11984,7 +11984,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12765),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -11994,7 +11994,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 8917),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12004,7 +12004,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 310),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12014,7 +12014,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12207),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12024,7 +12024,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 306),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12034,7 +12034,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 314),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12044,7 +12044,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 434),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12054,7 +12054,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12900),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12064,7 +12064,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12901),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12074,7 +12074,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 346),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12084,7 +12084,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 318),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12094,7 +12094,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 321),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12104,7 +12104,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 324),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12114,7 +12114,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 327),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12124,7 +12124,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 940),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12134,7 +12134,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 378),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12144,7 +12144,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 381),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12154,7 +12154,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 384),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12164,7 +12164,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 387),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12174,7 +12174,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 539),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12184,7 +12184,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 542),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12194,7 +12194,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 333),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12204,7 +12204,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 585),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12214,7 +12214,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 588),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12224,7 +12224,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 591),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12234,7 +12234,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 594),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12244,7 +12244,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 597),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12254,7 +12254,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 600),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12264,7 +12264,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 603),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12274,7 +12274,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 661),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12284,7 +12284,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 721),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12294,7 +12294,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 727),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12304,7 +12304,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 950),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12314,7 +12314,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 922),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12324,7 +12324,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 340),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12334,7 +12334,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 855),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12344,7 +12344,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11957),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12354,7 +12354,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11958),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12364,7 +12364,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 858),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12374,7 +12374,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 861),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12384,7 +12384,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 864),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12394,7 +12394,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 867),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12404,7 +12404,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 870),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12414,7 +12414,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 873),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12424,7 +12424,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 301),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12434,7 +12434,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 876),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12444,7 +12444,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 879),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12454,7 +12454,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 899),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12464,7 +12464,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 886),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12474,7 +12474,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 889),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12484,7 +12484,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12181),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12494,7 +12494,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12182),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12504,7 +12504,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12089),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12514,7 +12514,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12090),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12524,7 +12524,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 896),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12534,7 +12534,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24034),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12544,7 +12544,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 893),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default Binary")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default Binary", "")),
 			},
@@ -12554,7 +12554,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 7617),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Opc.Ua")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Opc.Ua", "")),
 			},
@@ -12564,7 +12564,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12758),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12574,7 +12574,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14802),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12584,7 +12584,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17541),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12594,7 +12594,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17553),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12604,7 +12604,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15949),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12614,7 +12614,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18851),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12624,7 +12624,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18852),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12634,7 +12634,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18853),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12644,7 +12644,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18854),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12654,7 +12654,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18855),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12664,7 +12664,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18856),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12674,7 +12674,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18857),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12684,7 +12684,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18858),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12694,7 +12694,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 18859),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12704,7 +12704,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15728),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12714,7 +12714,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23520),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12724,7 +12724,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12676),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12734,7 +12734,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32386),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12744,7 +12744,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15950),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12754,7 +12754,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14796),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12764,7 +12764,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15589),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12774,7 +12774,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15590),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12784,7 +12784,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15529),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12794,7 +12794,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15531),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12804,7 +12804,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24120),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12814,7 +12814,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24121),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12824,7 +12824,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24122),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12834,7 +12834,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14794),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12844,7 +12844,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14795),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12854,7 +12854,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14803),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12864,7 +12864,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15951),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12874,7 +12874,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15952),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12884,7 +12884,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14319),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12894,7 +12894,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15953),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12904,7 +12904,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15954),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12914,7 +12914,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25545),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12924,7 +12924,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15955),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12934,7 +12934,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15956),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12944,7 +12944,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15987),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12954,7 +12954,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15988),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12964,7 +12964,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21174),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12974,7 +12974,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15990),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12984,7 +12984,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15991),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -12994,7 +12994,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15992),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13004,7 +13004,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15993),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13014,7 +13014,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21175),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13024,7 +13024,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21176),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13034,7 +13034,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21177),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13044,7 +13044,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15995),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13054,7 +13054,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15996),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13064,7 +13064,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16007),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13074,7 +13074,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16008),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13084,7 +13084,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16009),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13094,7 +13094,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16010),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13104,7 +13104,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16011),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13114,7 +13114,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14804),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13124,7 +13124,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16012),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13134,7 +13134,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21178),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13144,7 +13144,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23919),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13154,7 +13154,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23920),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13164,7 +13164,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23921),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13174,7 +13174,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25546),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13184,7 +13184,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23922),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13194,7 +13194,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16014),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13204,7 +13204,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16015),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13214,7 +13214,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16016),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13224,7 +13224,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16017),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13234,7 +13234,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16018),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13244,7 +13244,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16019),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13254,7 +13254,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23923),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13264,7 +13264,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23924),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13274,7 +13274,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23925),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13284,7 +13284,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23928),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13294,7 +13294,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23929),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13304,7 +13304,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17472),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13314,7 +13314,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23932),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13324,7 +13324,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21179),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13334,7 +13334,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23933),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13344,7 +13344,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23934),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13354,7 +13354,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15579),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13364,7 +13364,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16021),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13374,7 +13374,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16022),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13384,7 +13384,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16023),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13394,7 +13394,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25547),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13404,7 +13404,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25548),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13414,7 +13414,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23505),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13424,7 +13424,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24296),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13434,7 +13434,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25243),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13444,7 +13444,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32669),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13454,7 +13454,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32670),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13464,7 +13464,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16126),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13474,7 +13474,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14797),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13484,7 +13484,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14800),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13494,7 +13494,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14798),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13504,7 +13504,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14799),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13514,7 +13514,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 297),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13524,7 +13524,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 7616),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13534,7 +13534,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 14801),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13544,7 +13544,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12757),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13554,7 +13554,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 8913),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13564,7 +13564,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 309),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13574,7 +13574,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12195),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13584,7 +13584,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 305),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13594,7 +13594,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 313),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13604,7 +13604,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 433),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13614,7 +13614,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12892),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13624,7 +13624,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12893),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13634,7 +13634,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 345),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13644,7 +13644,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 317),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13654,7 +13654,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 320),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13664,7 +13664,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 323),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13674,7 +13674,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 326),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13684,7 +13684,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 939),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13694,7 +13694,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 377),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13704,7 +13704,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 380),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13714,7 +13714,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 383),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13724,7 +13724,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 386),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13734,7 +13734,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 538),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13744,7 +13744,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 541),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13754,7 +13754,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 332),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13764,7 +13764,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 584),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13774,7 +13774,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 587),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13784,7 +13784,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 590),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13794,7 +13794,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 593),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13804,7 +13804,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 596),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13814,7 +13814,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 599),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13824,7 +13824,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 602),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13834,7 +13834,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 660),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13844,7 +13844,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 720),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13854,7 +13854,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 726),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13864,7 +13864,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 949),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13874,7 +13874,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 921),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13884,7 +13884,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 339),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13894,7 +13894,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 854),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13904,7 +13904,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11949),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13914,7 +13914,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 11950),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13924,7 +13924,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 857),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13934,7 +13934,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 860),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13944,7 +13944,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 863),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13954,7 +13954,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 866),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13964,7 +13964,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 869),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13974,7 +13974,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 872),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13984,7 +13984,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 300),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -13994,7 +13994,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 875),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14004,7 +14004,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 878),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14014,7 +14014,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 898),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14024,7 +14024,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 885),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14034,7 +14034,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 888),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14044,7 +14044,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12173),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14054,7 +14054,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12174),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14064,7 +14064,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12081),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14074,7 +14074,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 12082),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14084,7 +14084,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 895),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14094,7 +14094,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24038),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14104,7 +14104,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 892),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default XML")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default XML", "")),
 			},
@@ -14114,7 +14114,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 8252),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassVariable)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Opc.Ua")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Opc.Ua", "")),
 			},
@@ -14124,7 +14124,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15085),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14134,7 +14134,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15041),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14144,7 +14144,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17547),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14154,7 +14154,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17557),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14164,7 +14164,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16150),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14174,7 +14174,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19064),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14184,7 +14184,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19065),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14194,7 +14194,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19066),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14204,7 +14204,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19067),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14214,7 +14214,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19068),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14224,7 +14224,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19069),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14234,7 +14234,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19070),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14244,7 +14244,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19071),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14254,7 +14254,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 19072),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14264,7 +14264,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15042),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14274,7 +14274,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23528),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14284,7 +14284,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15044),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14294,7 +14294,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32390),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14304,7 +14304,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16151),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14314,7 +14314,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15057),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14324,7 +14324,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15058),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14334,7 +14334,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15059),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14344,7 +14344,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15700),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14354,7 +14354,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15714),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14364,7 +14364,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24132),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14374,7 +14374,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24133),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14384,7 +14384,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24134),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14394,7 +14394,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15050),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14404,7 +14404,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15051),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14414,7 +14414,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15049),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14424,7 +14424,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16152),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14434,7 +14434,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16153),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14444,7 +14444,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15060),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14454,7 +14454,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16154),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14464,7 +14464,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16155),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14474,7 +14474,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25561),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14484,7 +14484,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16156),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14494,7 +14494,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16157),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14504,7 +14504,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16158),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14514,7 +14514,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16159),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14524,7 +14524,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21198),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14534,7 +14534,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16161),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14544,7 +14544,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16280),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14554,7 +14554,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16281),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14564,7 +14564,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16282),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14574,7 +14574,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21199),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14584,7 +14584,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21200),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14594,7 +14594,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21201),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14604,7 +14604,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16284),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14614,7 +14614,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16285),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14624,7 +14624,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16286),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14634,7 +14634,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16287),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14644,7 +14644,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16288),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14654,7 +14654,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16308),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14664,7 +14664,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16310),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14674,7 +14674,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15061),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14684,7 +14684,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16311),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14694,7 +14694,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21202),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14704,7 +14704,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23987),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14714,7 +14714,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23988),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14724,7 +14724,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23989),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14734,7 +14734,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25562),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14744,7 +14744,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23990),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14754,7 +14754,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16323),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14764,7 +14764,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16391),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14774,7 +14774,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16392),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14784,7 +14784,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16393),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14794,7 +14794,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16394),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14804,7 +14804,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16404),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14814,7 +14814,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23991),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14824,7 +14824,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23992),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14834,7 +14834,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23993),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14844,7 +14844,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23996),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14854,7 +14854,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23997),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14864,7 +14864,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 17476),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14874,7 +14874,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24000),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14884,7 +14884,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 21203),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14894,7 +14894,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24001),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14904,7 +14904,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24002),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14914,7 +14914,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15726),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14924,7 +14924,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16524),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14934,7 +14934,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16525),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14944,7 +14944,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 16526),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14954,7 +14954,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25563),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14964,7 +14964,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25564),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14974,7 +14974,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 23511),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14984,7 +14984,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24300),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -14994,7 +14994,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 25247),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15004,7 +15004,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32677),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15014,7 +15014,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 32678),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15024,7 +15024,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15062),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15034,7 +15034,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15063),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15044,7 +15044,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15065),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15054,7 +15054,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15066),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15064,7 +15064,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15067),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15074,7 +15074,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15081),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15084,7 +15084,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15082),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15094,7 +15094,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15083),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15104,7 +15104,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15084),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15114,7 +15114,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15086),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15124,7 +15124,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15087),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15134,7 +15134,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15095),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15144,7 +15144,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15098),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15154,7 +15154,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15099),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15164,7 +15164,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15102),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15174,7 +15174,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15105),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15184,7 +15184,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15106),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15194,7 +15194,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15136),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15204,7 +15204,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15140),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15214,7 +15214,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15141),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15224,7 +15224,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15142),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15234,7 +15234,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15143),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15244,7 +15244,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15144),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15254,7 +15254,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15165),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15264,7 +15264,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15169),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15274,7 +15274,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15172),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15284,7 +15284,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15175),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15294,7 +15294,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15188),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15304,7 +15304,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15189),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15314,7 +15314,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15199),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15324,7 +15324,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15204),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15334,7 +15334,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15205),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15344,7 +15344,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15206),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15354,7 +15354,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15207),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15364,7 +15364,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15208),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15374,7 +15374,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15209),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15384,7 +15384,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15210),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15394,7 +15394,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15273),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15404,7 +15404,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15293),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15414,7 +15414,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15295),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15424,7 +15424,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15304),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15434,7 +15434,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15349),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15444,7 +15444,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15361),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15454,7 +15454,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15362),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15464,7 +15464,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15363),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15474,7 +15474,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15364),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15484,7 +15484,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15365),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15494,7 +15494,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15366),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15504,7 +15504,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15367),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15514,7 +15514,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15368),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15524,7 +15524,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15369),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15534,7 +15534,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15370),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15544,7 +15544,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15371),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15554,7 +15554,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15372),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15564,7 +15564,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15373),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15574,7 +15574,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15374),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15584,7 +15584,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15375),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15594,7 +15594,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15376),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15604,7 +15604,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15377),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15614,7 +15614,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15378),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15624,7 +15624,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15379),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15634,7 +15634,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15380),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15644,7 +15644,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15381),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15654,7 +15654,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 24042),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},
@@ -15664,7 +15664,7 @@ func PredefinedNodes() []*Node {
 		NewNode(
 			ua.NewNumericNodeID(0, 15382),
 			map[ua.AttributeID]*ua.Variant{
-				ua.AttributeIDNodeClass:   ua.MustVariant(uint32(ua.NodeClassObject)),
+				ua.AttributeIDNodeClass:   ua.MustVariant(int32(ua.NodeClassObject)),
 				ua.AttributeIDBrowseName:  ua.MustVariant(attrs.BrowseName("Default JSON")),
 				ua.AttributeIDDisplayName: ua.MustVariant(attrs.DisplayName("Default JSON", "")),
 			},

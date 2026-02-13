@@ -51,12 +51,12 @@ func NewNodeNameSpace(srv *Server, name string) *NodeNameSpace {
 	objectsNode := NewNode(
 		oid,
 		map[ua.AttributeID]*ua.Variant{
-			ua.AttributeIDNodeClass:     ua.MustVariant(uint32(ua.NodeClassObject)),
+			ua.AttributeIDNodeClass:     ua.MustVariant(int32(ua.NodeClassObject)),
 			ua.AttributeIDBrowseName:    ua.MustVariant(attrs.BrowseName(ns.name)),
 			ua.AttributeIDDisplayName:   ua.MustVariant(attrs.DisplayName(ns.name, ns.name)),
-			ua.AttributeIDDescription:   ua.MustVariant(uint32(ua.NodeClassObject)),
+			ua.AttributeIDDescription:   ua.MustVariant(attrs.Description(ns.name, ns.name)), // uint32(ua.NodeClassObject)),
 			ua.AttributeIDDataType:      ua.MustVariant(typedef),
-			ua.AttributeIDEventNotifier: ua.MustVariant(int16(0)),
+			ua.AttributeIDEventNotifier: ua.MustVariant(byte(0)),
 		},
 		[]*ua.ReferenceDescription{},
 		nil,

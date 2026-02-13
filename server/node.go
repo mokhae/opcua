@@ -49,11 +49,11 @@ func NewFolderNode(nodeID *ua.NodeID, name string) *Node {
 	n := NewNode(
 		nodeID,
 		map[ua.AttributeID]*ua.Variant{
-			ua.AttributeIDNodeClass:     ua.MustVariant(uint32(ua.NodeClassObject)),
+			ua.AttributeIDNodeClass:     ua.MustVariant(int32(ua.NodeClassObject)),
 			ua.AttributeIDBrowseName:    ua.MustVariant(attrs.BrowseName(name)),
 			ua.AttributeIDDisplayName:   ua.MustVariant(attrs.DisplayName(name, name)),
-			ua.AttributeIDDescription:   ua.MustVariant(ua.NodeClassObject),
-			ua.AttributeIDEventNotifier: ua.MustVariant(int16(0)),
+			ua.AttributeIDDescription:   ua.MustVariant(attrs.Description(name, name)),
+			ua.AttributeIDEventNotifier: ua.MustVariant(byte(0)),
 		},
 		[]*ua.ReferenceDescription{{
 			ReferenceTypeID: reftype,
@@ -75,12 +75,12 @@ func NewVariableNode(nodeID *ua.NodeID, name string, value any) *Node {
 	n := NewNode(
 		nodeID,
 		map[ua.AttributeID]*ua.Variant{
-			ua.AttributeIDNodeClass:     ua.MustVariant(uint32(ua.NodeClassVariable)),
+			ua.AttributeIDNodeClass:     ua.MustVariant(int32(ua.NodeClassVariable)),
 			ua.AttributeIDBrowseName:    ua.MustVariant(attrs.BrowseName(name)),
 			ua.AttributeIDDisplayName:   ua.MustVariant(attrs.DisplayName(name, name)),
-			ua.AttributeIDDescription:   ua.MustVariant(uint32(ua.NodeClassVariable)),
+			ua.AttributeIDDescription:   ua.MustVariant(attrs.Description(name, name)), // uint32(ua.NodeClassVariable)),
 			ua.AttributeIDDataType:      ua.MustVariant(typedef),
-			ua.AttributeIDEventNotifier: ua.MustVariant(int16(0)),
+			ua.AttributeIDEventNotifier: ua.MustVariant(byte(0)),
 		},
 		[]*ua.ReferenceDescription{},
 		func() *ua.Variant {
@@ -109,6 +109,9 @@ func (n *Node) sanitize() {
 	if n.attr[ua.AttributeIDDataType] == nil {
 		n.attr[ua.AttributeIDDataType] = ua.MustVariant(ua.NewTwoByteExpandedNodeID(0))
 	}
+	if n.attr[ua.AttributeIDEventNotifier] == nil {
+		n.attr[ua.AttributeIDEventNotifier] = ua.MustVariant(byte(0))
+	}
 }
 
 func (n *Node) ID() *ua.NodeID {
@@ -124,6 +127,8 @@ func (n *Node) Value() *ua.Variant {
 
 func (n *Node) Attribute(id ua.AttributeID) (*AttrValue, error) {
 	switch {
+	case id == ua.AttributeIDNodeID:
+		return NewAttrValue(ua.MustVariant(n.id)), nil
 	case id == ua.AttributeIDValue:
 		if n.val != nil {
 			return NewAttrValue(n.val()), nil
@@ -176,7 +181,9 @@ func (n *Node) DisplayName() *ua.LocalizedText {
 }
 
 func (n *Node) SetDisplayName(text, locale string) {
-	n.attr[ua.AttributeIDDisplayName] = ua.MustVariant(&ua.LocalizedText{Text: text, Locale: locale})
+	val := &ua.LocalizedText{Text: text, Locale: locale}
+	val.UpdateMask()
+	n.attr[ua.AttributeIDDisplayName] = ua.MustVariant(val)
 }
 
 func (n *Node) Description() *ua.LocalizedText {
@@ -188,7 +195,9 @@ func (n *Node) Description() *ua.LocalizedText {
 }
 
 func (n *Node) SetDescription(text, locale string) {
-	n.attr[ua.AttributeIDDescription] = ua.MustVariant(&ua.LocalizedText{Text: text, Locale: locale})
+	val := &ua.LocalizedText{Text: text, Locale: locale}
+	val.UpdateMask()
+	n.attr[ua.AttributeIDDescription] = ua.MustVariant(val)
 }
 
 func (n *Node) DataType() *ua.ExpandedNodeID {
@@ -200,15 +209,15 @@ func (n *Node) DataType() *ua.ExpandedNodeID {
 }
 
 func (n *Node) SetNodeClass(nc ua.NodeClass) {
-	n.attr[ua.AttributeIDNodeClass] = ua.MustVariant(uint32(nc))
+	n.attr[ua.AttributeIDNodeClass] = ua.MustVariant(int32(nc))
 }
 
 func (n *Node) NodeClass() ua.NodeClass {
-	v := n.attr[ua.AttributeIDDescription]
+	v := n.attr[ua.AttributeIDNodeClass]
 	if v == nil || v.Value() == nil {
 		return ua.NodeClassUnspecified
 	}
-	return ua.NodeClass(v.Value().(uint32))
+	return ua.NodeClass(v.Value().(int32))
 
 }
 
@@ -241,6 +250,17 @@ func (n *Node) AddVariable(o *Node) *Node {
 	return nn
 }
 
+func (n *Node) UpdateReferenceDisplayName(targetID *ua.NodeID, text, locale string) {
+	for _, r := range n.refs {
+		// match NodeID. We assume same namespace for simplicity or check expanded
+		if r.NodeID.NodeID.String() == targetID.String() {
+			r.DisplayName.Text = text
+			r.DisplayName.Locale = locale
+			return
+		}
+	}
+}
+
 func (n *Node) AddRef(o *Node) {
 	//eoid := ua.NewNumericExpandedNodeID(o.ns.ID(), o.)
 	eoid := ua.NewExpandedNodeID(o.ID(), "", 0)
@@ -255,4 +275,13 @@ func (n *Node) AddRef(o *Node) {
 		TypeDefinition:  o.DataType(),
 	}
 	n.refs = append(n.refs, &ref)
+}
+
+func (n *Node) SetHasTypeDefinition(typeID *ua.ExpandedNodeID) {
+	ref := &ua.ReferenceDescription{
+		ReferenceTypeID: ua.NewNumericNodeID(0, id.HasTypeDefinition),
+		IsForward:       true,
+		NodeID:          typeID,
+	}
+	n.refs = append(n.refs, ref)
 }

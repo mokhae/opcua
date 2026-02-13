@@ -15,6 +15,7 @@ import (
 	"time"
 
 	"github.com/mokhae/opcua/debug"
+	"github.com/mokhae/opcua/id"
 	"github.com/mokhae/opcua/server"
 	"github.com/mokhae/opcua/ua"
 )
@@ -128,10 +129,17 @@ func main() {
 	log.Printf("Root : %v %v", root_ns.Name(), root_ns.ID())
 	root_obj := root_ns.Objects()
 
-	root_obj.SetDescription("CCM", "en-US")
+	root_obj.SetDescription("CCM OPC UA", "en-US")
 	root_obj.SetBrowseName("CCM")
-	root_obj.SetDisplayName("CCM_Root", "en-US")
+	root_obj.SetDisplayName("CCM_Objects", "en-US")
 	root_obj.SetNodeClass(ua.NodeClassObject)
+	root_obj.SetHasTypeDefinition(ua.NewNumericExpandedNodeID(0, id.FolderType))
+
+	// Update the reference in the Root folder so it shows up as "CCM_Root" in the tree
+	// rootRef := s.Namespaces()[0].Node(ua.NewNumericNodeID(0, id.RootFolder))
+	// if rootRef != nil {
+	// 	rootRef.UpdateReferenceDisplayName(root_obj.ID(), "CCM_Root", "")
+	// }
 
 	log.Printf("Root object : %v %v %v %v", root_obj.BrowseName().Name, root_obj.ID().String(), root_obj.DisplayName().Text, root_obj.Description().Text)
 	//root_obj.SetAttribute(ua.AttributeIDNodeID, ua.DataValue{})
