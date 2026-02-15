@@ -136,13 +136,12 @@ func main() {
 	root_obj.SetHasTypeDefinition(ua.NewNumericExpandedNodeID(0, id.FolderType))
 
 	// Update the reference in the Root folder so it shows up as "CCM_Root" in the tree
-	// rootRef := s.Namespaces()[0].Node(ua.NewNumericNodeID(0, id.RootFolder))
-	// if rootRef != nil {
-	// 	rootRef.UpdateReferenceDisplayName(root_obj.ID(), "CCM_Root", "")
-	// }
+	rootRef := root_ns.Node(ua.NewNumericNodeID(0, id.RootFolder))
+	if rootRef != nil {
+		rootRef.UpdateReferenceDisplayName(root_obj.ID(), "CCM_Root", "en-US")
+	}
 
 	log.Printf("Root object : %v %v %v %v", root_obj.BrowseName().Name, root_obj.ID().String(), root_obj.DisplayName().Text, root_obj.Description().Text)
-	//root_obj.SetAttribute(ua.AttributeIDNodeID, ua.DataValue{})
 	mrw_id := s.AddNamespace(mrw)
 	root_obj.AddRef(mrw.Objects())
 	log.Printf("map namespace added at index %d", mrw_id)
